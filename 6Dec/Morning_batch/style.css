@@ -1,0 +1,92 @@
+/* Width */
+    /* max-width */
+    /* .container{
+        max-width: 500px;
+        height: 50vh;
+        background-color: aquamarine;
+    } */
+    /* #box{
+        width: 100%;
+        background-color: blue;
+        height: 10vh;
+    } */
+    /* min-width */
+    /* .container{
+        min-width: 300px;
+        height: 50vh;
+        background-color: aquamarine;
+    } */
+    /* calc() */
+    /* overflow
+    overflow x
+    overflow y
+    overflow scroll
+    overflow visible */
+    .container{
+        width: 20%;
+        background-color: aqua;
+        overflow: visible;
+        opacity: 0;
+    }
+    /* /* Pseudo-element   */
+    /* marker(li) */
+    /* li::marker{
+        color: brown;
+        font-size: 20px;
+    } */
+    a{
+        text-decoration: none;
+        color: purple;
+    }
+    a:hover{
+        color: red;
+    }
+    .box1{
+        display: none;
+    }
+    
+    .list_items{
+        margin: 2px;
+        list-style-type: none;
+        
+    }
+    .list_items_nav{
+        display: flex;
+    }
+    .list_items{
+        display: flex;
+        flex-direction: column;
+    }
+    /* Hover over this div element to show the p element */
+    /* Before & After */
+    /* selection
+    first-letter
+    first-line
+    opacity
+    tooltip */
+    .list_items:hover::before{
+        content: "";
+        height: 2px;
+        color: rgb(91, 23, 134);
+        background-color: brown;
+        border: 1px solid red;
+    }
+    .container >p::selection{
+        background-color: yellow;
+    }
+    .container >p::first-letter{
+        font-size: 50px;
+    }
+    .container >p::first-line{
+        background-color: black;
+        color: white;
+        
+    }
+
+
+        /* #box{
+        width: calc(100% - 50px);
+        height: 20vh;
+        background-color: aqua;
+    } */
+

@@ -1,0 +1,70 @@
+/* Line height
+After
+Visited
+Before
+Variables
+Grid
+    Grid template column
+    Grid template row
+    Auto
+    Minmax
+    Auto fill
+    Autofit
+    Grid column start and end
+    Grid row start and end
+    Grid column 
+    Grid row
+    grid-auto-rows
+    align items
+    justify items
+    justify self
+    align self 
+    Grid template area 
+    Grid area
+    Media queries
+*/
+:root{
+    --primary-color:steelblue;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.nav{
+    width: 100%;
+}
+
+.nav > a:hover{
+    color: slategrey;
+    transition: 20s ease;
+}
+li{
+    list-style-type: none;
+}
+.nav_links:hover{
+    transition: 10s ;
+}
+a:visited{
+    color: violet;
+}
+.nav_links:hover::before{
+    content: "";
+    height: 1px;
+    background-color: brown;
+    transition: 5s ease;
+    transform: scale(1);
+}
+.nav_links{
+    display: flex;
+    flex-direction: column;
+    
+}
+.navigations{
+    display: flex;
+    justify-content: space-around;
+}

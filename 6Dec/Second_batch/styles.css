@@ -1,0 +1,148 @@
+.para::first-line{
+    background-color: aqua;
+    
+}
+.para{
+    width: calc(100% - 500px);
+}
+.image{
+    width: 200px;
+    height: 500px;
+    background-color: aqua;
+    overflow: visible;
+}
+/* .para::first-letter{
+    background-color: aqua;
+    font-size: 50px;
+} */
+.para::selection{
+    background-color: yellow;
+}
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li::marker{
+    color: blue;
+    font-size: 50px;
+}
+input[type="text"]:focus{
+    width: 100%;
+    border: 10px solid;
+    background-color: steelblue;
+}
+h1{
+    /* text-decoration: underline; */
+    /* text-decoration: overline; */
+    /* text-decoration: line-through; */
+    /* text-transform: capitalize; */
+    /* text-transform: uppercase; */
+    text-transform: lowercase ;
+    text-shadow: 2px 2px chartreuse;
+}
+.box{
+    margin-bottom: 50px;
+    /* width: 100px; */
+    /* height: 100px; */
+    /* background-color: chocolate; */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    /* min-width: 800px; */
+    /* max-width: 500px; */
+    /* box-shadow: 3px 3px 3px 5px  chartreuse, 3px 3px 3px 5px rgb(5, 115, 166) inset; */
+}
+th,td{
+    border: 1px dotted red;
+    text-align: center;
+    /* vertical-align: center; */
+    padding: 10px;
+}
+table{
+    border-collapse: collapse;
+}
+tr:first-child{
+    background-color: aquamarine;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.navigation > h1{
+    display: none;
+}
+
+@media screen and (max-width:707px){
+    .nav-links{
+        display: none;
+    }
+    .navigation > h1{
+        display: block;
+    }
+    .navigation{
+        background-color: aqua;
+        height: 200px;
+        width: 100%;
+    }
+    .navigation:hover{
+        background-color: red;
+    }
+}
+
+.header{
+    background-color: blue;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.nav{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: yellow;
+    z-index: 100;
+}
+.left_logo{
+    width: 10%;
+    height: 50px;
+    background-color: blueviolet;
+}
+.Middle_navs{
+    width: 70%;
+    height: 100%;
+    background-color: black;
+}
+.Login{
+    background-color: red;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.login_form{
+    position: absolute;
+    left: 713px;
+    top: 10vh;
+}
+.Login:hover .login_form{
+    left: 13px;
+    top: 11vh;
+}

@@ -1,0 +1,33 @@
+.flex{
+    background-color: red;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    width: 60%;
+    height: 80vh;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    /* display: flex;
+    justify-content: center; */
+    /* text-align: center; */
+    padding: 20px;
+}
+.fname , .Lname{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 10px;
+    padding: 20px;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+}
+.fname > input , .Lname > input{
+    height:40px;
+    outline: none;
+}

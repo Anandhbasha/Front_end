@@ -1,0 +1,9 @@
+.grid{
+    display: grid;
+    grid-template-columns:200px 1fr;
+    gap: 10px;
+}
+.box {
+    background-color: rebeccapurple;
+    }
+

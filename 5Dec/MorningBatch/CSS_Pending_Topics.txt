@@ -1,0 +1,100 @@
+/* 
+Background
+    background-color
+    background-image:url()
+    background-repeat-x,y,No
+    background-attachment:scroll&fixed
+    background-position:
+    background-size:Cover and contain
+    background_Short 
+border
+    border-style
+    border-width
+    border-color
+    border-Individual Sides
+    border
+border-radius
+Margin
+    margin-top
+    margin-right
+    margin-bottom
+    margin-left
+padding
+    padding-top
+    padding-right
+    padding-bottom
+    padding-left
+Text
+    Text color
+    text-align
+    text-decoration:overline underline & line-through 
+    text-transform
+    letter-spacing
+    text-shadow
+    font-family
+    font-style
+    font-size
+Effects
+    box-shadow
+Table
+    Table border
+    border-collapse
+    vertical-align
+//Completed
+Width
+    max-width
+    min-width
+    calc()
+overflow
+    overflow x
+    overflow y
+    overflow scroll
+    overflow visible
+float
+Pseudo-element  
+    marker(li)
+    Hover over this div element to show the p element
+    Before & After
+    selection
+    first-letter
+    first-line
+    opacity
+    tooltip
+input[type=text]
+input[type=text]:focus
+flex
+    order
+    flex-wrap
+    flex-grow
+    flex-shrink
+    flex-basis
+    justify
+    align
+    gap
+Grid
+    Auto
+    Minmax
+    Auto fill
+    Autofit
+    Grid column start and end
+    Grid row start and end
+    Grid column 
+    Grid row
+    grid-auto-rows
+    align items
+    justify items
+    justify self
+    align self 
+    Grid template area 
+    Grid area
+
+animation
+    transition-delay
+    @keyframes animationName
+
+object-fit
+Media queries
+    @media screen and (min-width: px) 
+    @media (max-width: px)
+    (min-width: px) and (max-width: px)
+*/
