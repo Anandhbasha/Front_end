@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .box {
+                width: 100px;
+                height: 100px;
+                background-color: aqua;
+                margin: 50px;
+                animation-name: key; /* Matches the keyframes name */
+                animation-duration: 10s; /* Specifies the duration */
+                animation-iteration-count: infinite; /* Loops animation infinitely */
+            }
+            @keyframes key {
+                0% {
+                    background-color: blue;
+                }
+                25% {
+                    background-color: blueviolet;
+                }
+                50% {
+                    background-color: brown;
+                }
+                100% {
+                    background-color: yellowgreen;
+                }
+            }
+    </style>
 </head>
 <body>
+    <div class="box"></div>
     <script>
         //Hoisting
             //var - 
