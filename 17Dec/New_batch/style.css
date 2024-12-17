@@ -1,31 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 .box{
     border: 1px solid red ;
     height: 100px;
-    width: 200px;
+    width: 200px; */
     /* width: calc(100% - 250px); */
     /* border-left: 10px solid rebeccapurple;
     border-top: 1px solid red;
     border-right: 2px solid yellow; */
-    border-radius: 15px 5px 20px 50px;
-    box-shadow: 10px 15px 5px 2px violet;
-    /* min-width: 500px; */
+    /* border-radius: 15px 5px 20px 50px; */
+    /* box-shadow: 10px 15px 5px 2px violet; */
+    /* min-width: 500px; */ 
     /* max-width: 700px; */
     /* transform: translate(100px,200px); */
-    /* transform: rotate(90deg); */
+    /* transform: rotate(90deg);
     transform: scale(2);
 
 
 }
+
+
+
+
+.box{
+    /* /* width: 400px; */
+    /* height: 10vh; */
+    /* box-shadow: 10px 5px 5px 15px red; */
+    /* background-color: aquamarine; */
+    /* width: calc(100% - 1050px); */
+    /* max-width: 800px; */
+    /* min-width: 600px; */
+    /* border: 10px solid blueviolet; */ 
+    /* border-top: 5px solid black; */
+    /* /*  */
+     
+    /* border-radius: 10px 15px 20px 50px; */
+
+/* } */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 .para{
     text-align: center;
-    color: blue;
+    color: red;
+    font-family: "Poppins", serif;
+    text-transform: lowercase;
+    word-spacing: 15px;
+    font-size: 2em;
+    font-size: x-large;
+    font-weight: 900;
+    text-shadow: 2px 2px blueviolet;
+    /* text-decoration: line-through; */
+    /* letter-spacing: 10px; */
+    /* color: blue;
     text-decoration: underline;
     text-transform: lowercase;
-    /* letter-spacing: 5px; */
+    letter-spacing: 5px;
     font-family: "Poppins", serif;
     font-size: x-large;
     font-size: 3em;
     text-shadow: 3px 5px red;
-    word-spacing: 20px;
-}
+    word-spacing: 20px; */
+} 
