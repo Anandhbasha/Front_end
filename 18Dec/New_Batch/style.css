@@ -25,13 +25,35 @@ td{
     /* overflow-y: scroll; */
 /* } */ 
 
-
+table{
+    margin-top: 10px;
+    border-collapse: collapse;
+    vertical-align: center;
+}
+td{
+    border:  1px solid steelblue;
+    vertical-align: center;
+}
 
 .box3{
     background-color: aqua;
     height: 150px;
-    width: 1300px;
-    position: fixed;
-    top: 0;
-    left: 0;
+    width: 100%;
+    /* position: relative; */
+    /* transform: translate(50px,100px); */
+    overflow: hidden;
+}
+p{
+    margin-top: 100px;
+}
+.box4{
+    width: 150px;
+    height: 200px;
+    background-color: black;
+    /* position: absolute; */
+    top: 50px;
+    /* transform: translate(100px,200px); */
+    /* transform: rotate(45deg); */
+    /* transform: scale(2); */
+    overflow: hidden;
 }
