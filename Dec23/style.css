@@ -1,0 +1,11 @@
+.box{
+    background-color: aqua;
+}
+p::selection{
+    background-color: black;
+}
+@media  (max-width:768px) and (min-width:400px) {
+    .box{
+        width: 550px;
+    }
+}

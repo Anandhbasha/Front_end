@@ -1,0 +1,91 @@
+:root{
+    --primary-color:steelblue;
+}
+
+.box{
+    width: 100%;
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.header{
+    /* display: grid;
+    gap: 10px;
+    height: 100vh;
+    grid-template-areas: 
+    "h h h h"
+    "ml mc mnc mr"
+    "f f f f"; */
+    /* grid-template-columns: repeat(auto-fill,minmax(200px,1fr)); */
+    /* grid-template-columns: repeat(4,1fr); */
+    /* grid-template-rows: 200px; */
+} 
+.key{
+background-color: black;
+    height: 100vh;
+    width: 500px;
+    
+    /* animation-name: colors;
+    animation-duration: 10s;
+    animation-iteration-count: infinite; */
+    transform: scale(1);
+    transition: 5s ease;
+}  
+.key > p{
+    z-index: 1;
+}
+.key:hover{
+    transform: scale(1.5);
+    transition: 5s ease;
+}
+ul::marker{
+    background-color: blueviolet;
+}
+
+/* @keyframes colors {
+    0%{
+        background-color: black;
+    }
+    25%{
+        background-color: blue;
+    }
+    50%{
+        background-color: red;
+    }
+    90%{
+        background-color: yellow;
+    }
+    100%{
+        background-color: violet;
+    }
+} */
+.box1{
+    /* grid-column: span 2; */
+    /* grid-row: span 2; */
+}
+.head{
+    grid-area: h;
+    background-color: aqua;
+}
+.main_left{
+    grid-area: ml;
+    background-color: black;
+}
+.main_center{
+    grid-area: mc;
+    background-color: blue;
+}
+.main_next_center{
+    grid-area: mnc;
+    background-color: blueviolet;
+}
+.main_right{
+    grid-area: mr;
+    background-color: brown;
+}
+.footer{
+    grid-area: f;
+    background-color: yellowgreen;
+}
