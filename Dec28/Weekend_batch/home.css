@@ -1,0 +1,12 @@
+h1{
+    background-color: black;
+}
+.box{
+    background-color: purple;
+    color: white;
+    height: 20px;
+    width: 60px;
+}
+#forms{
+    background-color: chartreuse;
+}
