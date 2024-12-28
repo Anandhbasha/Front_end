@@ -1,12 +1,35 @@
-h1{
-    background-color: black;
+*{
+    margin: 0;
+    padding: 0;
+}
+.heading{
+    color: rgb(0, 42, 255);
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 500px;
+    margin-bottom: 50px;
+    
+}
+.image{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(rgba(26, 2, 2, 0.299),rgba(91, 91, 140, 0.377),rgba(0, 0, 0, 0.345)),url(/Assets/Images/download\ \(1\).jpeg) no-repeat;
+    background-size: contain;
+    background-position: left;
 }
 .box{
-    background-color: purple;
-    color: white;
-    height: 20px;
-    width: 60px;
+    background-color: blueviolet;
 }
-#forms{
-    background-color: chartreuse;
+h1{
+    background-color: aqua;
+    margin-bottom: 5px;
+}
+span{
+    background-color: rgb(51, 153, 58);
+}
+.box{
+    width: 500px;
+    margin: 50px 10px 40px 100px;
+    padding: 50px 10px 40px 100px;
 }
