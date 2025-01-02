@@ -83,3 +83,46 @@ arrow(10,20);
 // add(50,80,200,80,100);
 // add(50,80,200,80,100);
 // add(50,80,20,80,100);
+
+//today task
+//output like
+//i need all studnets marks
+//studentName:name,
+//rollNumber:rollnumber,
+//Total:total
+//input 
+// const students = [{
+//     studentName:"Arun",
+//     rollNumber:1254421,
+//     marks:[50,70,80,30,100]
+// },
+// {
+//     studentName:"bala",
+//     rollNumber:1254422,
+//     marks:[50,70,80,30,100]
+// },
+// {
+//     studentName:"pranav",
+//     rollNumber:1254421,
+//     marks:[50,70,80,30,100]
+// },
+// {
+//     studentName:"mithun",
+//     rollNumber:1254421,
+//     marks:[50,70,80,30,100]
+// },
+// {
+//     studentName:"anandh",
+//     rollNumber:1254421,
+//     marks:[50,70,80,30,100]
+// },
+// {
+//     studentName:"raja",
+//     rollNumber:1254421,
+//     marks:[50,70,80,30,100]
+// },
+// {
+//     studentName:"mano",
+//     rollNumber:1254421,
+//     marks:[50,70,80,30,100]
+// }]

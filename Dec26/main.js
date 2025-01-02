@@ -120,7 +120,12 @@
 // color[4]="pink";
 // color[3]="purple";
 // console.log(color);
-
+//output like
+//i need all studnets marks
+//studentName:name,
+//rollNumber:rollnumber,
+//Total:total
+//input 
 const students = [{
     studentName:"Arun",
     rollNumber:1254421,
