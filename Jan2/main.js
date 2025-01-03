@@ -19,14 +19,19 @@ function add(t,e,m,s,ss){
     
 // }
 //IIFI
-const iffs = function(){
-
-}
+(function () {
+    console.log("This runs IFFI!");
+  })();
+  
 //Arrow
 const arrow = (x,t)=>console.log(x+t);
 
 arrow(10,20);
 //Anonoums
+const greet = function () {
+    console.log("Hello, World!");
+  };
+  
 // add(50,80,20,80,100);
 // add(50,40,20,80,100);
 // add(10,80,20,80,100);
