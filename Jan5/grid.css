@@ -1,0 +1,61 @@
+.boxes{
+    display: grid;
+    /* gap: 10px; */
+    height: 100vh;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+    /* grid-template-columns: repeat(3,1fr); */
+    /* grid-template-columns: repeat(auto-fill,minmax(200px,1fr)); */
+    grid-template-areas: 
+    "h h h h"
+    "ml mlc mrc mr"
+    "f f f f";
+}
+.box{
+    background-color: purple;
+}
+.box1{
+    grid-column: 1/6;
+}
+.header{
+    height: 10vh;
+    background-color: aqua;
+    grid-area: h;
+}
+.main_left,.main_left_center,.main_Right_center,.main_right{
+    height: 80vh;
+}
+.main_left{
+    background-color: black;
+    grid-area: ml;
+    transform:  translateX(100px);
+    transition: 10s ease;
+}
+.main_left_center{
+    background-color: brown;
+    grid-area: mlc;
+}
+.main_Right_center{
+    background-color: violet;
+    grid-area: mrc;
+}
+.main_right{
+    background-color: yellow;
+    grid-area: mr;
+}
+.footer{
+    height: 10vh;
+    grid-area: f;
+    background-color: aqua;
+    animation: changeColor 5s infinite;
+}
+@keyframes changeColor{
+    0%{
+        background-color: black;
+    }
+    50%{
+        background-color: blue;
+    }
+    100%{
+        background-color: yellow;
+    }
+}
