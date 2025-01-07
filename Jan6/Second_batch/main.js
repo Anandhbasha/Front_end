@@ -41,39 +41,59 @@ const a = [10,20,30]
 const [x,b,c] =a;
 console.log(x,b,c);
 
-const person = {
-    name:"XYZ",
-    age:20,
-    gender:"Male",
+// const person = {
+//     name:"XYZ",
+//     age:20,
+//     gender:"Male",
     
-}
-const {name,age} = person;
-console.log(name,age);
+// }
+// const {name,age} = person;
+// console.log(name,age);
 
 
-for(let [key,value] of Object.entries(person)){
-    console.log(key,value);
+// for(let [key,value] of Object.entries(person)){
+//     console.log(key,value);
     
-}
-console.log(person);
+// }
+// console.log(person);
 //optionalchaining
-console.log(person?.age);
+// console.log(person?.age);
 
 
 //spread operator
-let ab = [...a]
-console.log(ab);
+// let ab = [...a]
+// console.log(ab);
 
 
 // let [ac,ad,...ae] = [10,20,40,60,70,80]
-console.log(ac,ad,ae);
-let z = [...ab,...ae]
+// console.log(ac,ad,ae);
+// let z = [...ab,...ae]
 
-console.log(z);
+// console.log(z);
 
-//rest operator
-let [ac,ad,...ae] = [10,20,40,60,70,80]
-console.log(ac,ad,ae);
+// //rest operator
+// let [ac,ad,...ae] = [10,20,40,60,70,80]
+// console.log(ac,ad,ae);
+
+
+
+//array desctructuring
+
+const f =[10,20,30,40,50]
+
+const [zx,vu] = f;
+
+console.log(zx,vu);
+
+
+// Object
+
+const Person_names = {
+    name:"XYZ",
+    age:30
+}
+const {name,age} = Person_names
+console.log(age,name);
 
 //callback
 //promise
