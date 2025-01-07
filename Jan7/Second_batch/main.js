@@ -172,31 +172,67 @@
 
 ///Promise Example
 
-const friend = new Promise((resolve,reject)=>{
-    let Reached = false;
-    if(Reached){
-        resolve("He is Reached Safely");
-    }
-    else{
-        setTimeout(()=>{
-            reject("He is not reached")
-        },2000)        
-    }
-})
+// const friend = new Promise((resolve,reject)=>{
+//     let Reached = false;
+//     if(Reached){
+//         resolve("He is Reached Safely");
+//     }
+//     else{
+//         setTimeout(()=>{
+//             reject("He is not reached")
+//         },2000)        
+//     }
+// })
 
-const friends2 = new Promise((resolve,reject)=>{
-    let reached = true;
-    if(reached){
-        resolve("He is Reached Home")
-    }
-    else{
-        reject("He is not yet reached")
-    }
-})
+// const friends2 = new Promise((resolve,reject)=>{
+//     let reached = true;
+//     if(reached){
+//         resolve("He is Reached Home")
+//     }
+//     else{
+//         reject("He is not yet reached")
+//     }
+// })
 
-Promise.allSettled([friend,friends2]).then((x)=>{
-    console.log(x);
+// Promise.allSettled([friend,friends2]).then((x)=>{
+//     console.log(x);
     
-}).catch((error)=>{
-    console.log(error);    
-})
+// }).catch((error)=>{
+//     console.log(error);    
+// })
+
+
+
+
+// let days = ["Monday","Tuesday","wednesday","Thursday","Friday","Saturday","Sunday"];
+
+// const day = async()=>{
+//     try {
+//         let y = await da;
+//         console.log(y);
+//     } catch (error) {
+//         console.log(error);
+        
+//     }
+    
+// }
+// day();
+
+
+const datas = async()=>{
+    try {
+        const values = await fetch("https://jsonplaceholder.typicode.com/posts");
+        if(!values.ok){
+            console.log("Database error");
+            
+        }
+        
+        const last = await values.json();
+        console.log(last);
+        
+        
+    } catch (error) {
+        
+    }
+}
+datas();
