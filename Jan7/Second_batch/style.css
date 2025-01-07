@@ -1,0 +1,27 @@
+/* a::after{
+    content: " "; */
+    /* border: 1px solid red; */
+/* } */
+/* p:hover::before{
+    content: " ";
+    position: absolute;
+    top: 9px;
+    left: -3px; */
+    /* border: 2px solid purple; */
+    /* height: 5px;
+    width: 100px;
+    background-color: purple;
+} */
+/* p{
+    text-shadow: 2px 1px blue;
+} */
+.box{
+    height: 100vh;
+    min-width: 300px;
+    max-width: 500px;
+    float: left;
+    background-color: aqua;
+    box-shadow: 2px 5px 5px 2px rgba(255, 0, 0, 0.158);
+}
+
+
