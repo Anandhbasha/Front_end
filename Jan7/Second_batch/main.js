@@ -1,9 +1,13 @@
-//Callback
-// function fetchData(callback) {
-//     setTimeout(() => {
-//         callback('Data fetched!');
-//     }, 1000);
+// Callback
+// function call(){
+
 // }
+// function fetchData(callback) {
+//         callback('Data fetched!');
+//         call();
+
+// }
+// fetchData();
 
 // fetchData((data) => {
 //     console.log(data); 
@@ -27,21 +31,19 @@
 //     let success = false;
 
 //     if (success) {
-//         resolve('Operation succeeded');
+//         resolve(220);
 //     } else {
 //         reject('Operation failed');
 //     }
 // });
 
 // promise.then((result) => {
-//         console.log(result); 
+//         console.log("The Ticket Price is :", result); 
 //     })
 //     .catch((error) => {
-//         console.error(error);
-//     }).finally((finish)=>{
-//         console.log("Cleared succesfully");
+//         console.error("Unable to Book the Ticket",error);
+//     })
         
-//     });
 
 
 
@@ -219,20 +221,20 @@
 // day();
 
 
-const datas = async()=>{
-    try {
-        const values = await fetch("https://jsonplaceholder.typicode.com/posts");
-        if(!values.ok){
-            console.log("Database error");
+// const datas = async()=>{
+//     try {
+//         const values = await fetch("https://jsonplaceholder.typicode.com/posts");
+//         if(!values.ok){
+//             console.log("Database error");
             
-        }
+//         }
         
-        const last = await values.json();
-        console.log(last);
+//         const last = await values.json();
+//         console.log(last);
         
         
-    } catch (error) {
+//     } catch (error) {
         
-    }
-}
-datas();
+//     }
+// }
+// datas();

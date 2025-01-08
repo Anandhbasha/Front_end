@@ -15,7 +15,7 @@
 
 // console.log(arr.find((x) => x > 25));
 
-let names = "Magudes Wara Muthu"
+// let names = "Magudes Wara Muthu"
 // let newnames= names.split("/");
 // console.log(newnames);
 
