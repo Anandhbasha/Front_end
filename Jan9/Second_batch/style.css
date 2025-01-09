@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.forms{
+    width: 600px;
+    box-shadow: 2px 1px 3px 2px #0b0f074f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 20px;
+}
+.forms > input{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    /* border: none; */
+}
+#btn{
+    width: 160px !important;
+    height: 30px;
+    background-color: aqua;
+    border: 1px salmon;
+    padding: 2px 15px;
+    text-transform: capitalize;
+    font-size: 1.1em;
+    margin-bottom: 25px;
+}

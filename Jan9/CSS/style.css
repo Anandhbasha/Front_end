@@ -1,0 +1,39 @@
+ /* .box{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    / animation: change 10s; *
+    / transform: translateX(30px); *
+    transform: scale(1.5);
+    transition: 10s ease;
+} */
+
+/* @keyframes change {
+    0%{
+        background-color: purple;
+    }
+    50%{
+        background-color: black;
+    }
+    100%{
+        background-color: pink;
+    }
+} */
+/* .nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    display: none;
+} */
+
+/* @media screen and (max-width:700px) {
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav{
+        display: none;
+    }
+} */
