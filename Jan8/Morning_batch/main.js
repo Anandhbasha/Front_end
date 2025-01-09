@@ -1,17 +1,18 @@
-// fetch('https://jsonplaceholder.typicode.com/posts').then((success)=>{
-//     console.log(success);
+fetch('https://jsonplaceholder.typicode.com/posts').then((success)=>{
+    console.log(success);
     
-//     if(!success.ok){
-//         throw new Error ("Server is Not Connected"+success.status )
-//     }
-//     return success.json();
-// }).then((data)=>{
-//     console.log(data);
+    if(!success.ok){
+        throw new Error ("Server is Not Connected"+success.status )
+    }
+    return success.json();
+}).then((data)=>{
     
-// }).catch((err)=>{
-//     console.log(err);
+    console.log(data);
     
-// })
+}).catch((err)=>{
+    console.log(err);
+    
+})
 
 // const json = `[{
 // "name":"xyz"}]`;
