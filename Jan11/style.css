@@ -1,0 +1,68 @@
+/* animation Effects
+Transform
+translate
+transition
+keyframes */
+
+.box{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    /* transition: 5s ease; */
+    background-color: black;
+    /* animation-name: delay;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; */
+    
+}
+.box:hover{
+    transform: scale(1.5);
+    background-color: aqua;
+    transition: 2s ease-in; 
+}
+
+/* 
+@keyframes delay {
+    0%{
+        background-color: pink;
+    }
+    50%{
+        background-color: chartreuse;
+    }
+    100%{
+        background-color: blue;
+    }
+}
+@media screen and (min-width:100px){
+    
+}
+@media((max-width:912px) and (min-width:600px) ){
+    .box{
+        /* width: 900px;
+        display: none;
+        /* height: 1000px; 
+    }
+} */
+
+
+/* .nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav_icon{
+    display: none;
+    
+}
+@media screen and (max-width:600px){
+    .nav_icon{
+        display: block;
+        
+    }
+    .nav_icon:hover{
+        transform: scale(2);
+        transition: 10s ease;
+    }
+    .nav{
+        display: none;
+    }
+} */

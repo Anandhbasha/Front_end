@@ -1,18 +1,18 @@
-fetch('https://jsonplaceholder.typicode.com/posts').then((success)=>{
-    console.log(success);
+// fetch('https://jsonplaceholder.typicode.com/posts').then((success)=>{
+//     console.log(success);
     
-    if(!success.ok){
-        throw new Error ("Server is Not Connected"+success.status )
-    }
-    return success.json();
-}).then((data)=>{
+//     if(!success.ok){
+//         throw new Error ("Server is Not Connected"+success.status )
+//     }
+//     return success.json();
+// }).then((data)=>{
     
-    console.log(data);
+//     console.log(data);
     
-}).catch((err)=>{
-    console.log(err);
+// }).catch((err)=>{
+//     console.log(err);
     
-})
+// })
 
 // const json = `[{
 // "name":"xyz"}]`;
@@ -92,18 +92,35 @@ fetch('https://jsonplaceholder.typicode.com/posts').then((success)=>{
 
 
 
-// async function getData() {
-//     try {
-//       const response = await fetch('https://jsonplaceholder.typicode.com/posts/1');
-//       if (!response.ok) {
-//         throw new Error(`HTTP error! status: ${response.status}`);
-//       }
-//       const data = await response.json();
-//       console.log('GET:', data);
-//     } catch (error) {
-//       console.error('GET Error:', error);
-//     }
-//   }
+async function getData() {
+  try {
+    const response = await fetch('https://jsonplaceholder.typicode.com/post')
+    if(!response.ok){
+      throw new Error (`Unable to Connect: ${response.status}`)
+    }
+    const data = await response.json()
+    console.log(data);
+    
+  } catch (error) {
+    console.log(error);
+    
+  }
+  
+    // try {
+    //   const response = await fetch('https://jsonplaceholder.typicode.com/posts/1');
+    //   if (!response.ok) {
+    //     throw new Error(`HTTP error! status: ${response.status}`);
+    //   }
+    //   const data = await response.json();
+    //   console.log('GET:', data);
+    // } catch (error) {
+    //   console.error('GET Error:', error);
+    // }
+    
+  }
+  getData();
+  
+
   
 //   async function createData() {
 //     try {
