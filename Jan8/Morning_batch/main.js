@@ -92,19 +92,19 @@
 
 
 
-async function getData() {
-  try {
-    const response = await fetch('https://jsonplaceholder.typicode.com/post')
-    if(!response.ok){
-      throw new Error (`Unable to Connect: ${response.status}`)
-    }
-    const data = await response.json()
-    console.log(data);
+// async function getData() {
+//   try {
+//     const response = await fetch('https://jsonplaceholder.typicode.com/post')
+//     if(!response.ok){
+//       throw new Error (`Unable to Connect: ${response.status}`)
+//     }
+//     const data = await response.json()
+//     console.log(data);
     
-  } catch (error) {
-    console.log(error);
+//   } catch (error) {
+//     console.log(error);
     
-  }
+//   }
   
     // try {
     //   const response = await fetch('https://jsonplaceholder.typicode.com/posts/1');
@@ -117,8 +117,8 @@ async function getData() {
     //   console.error('GET Error:', error);
     // }
     
-  }
-  getData();
+  // }
+  // getData();
   
 
   
@@ -218,4 +218,7 @@ async function getData() {
 //   updateData();  
 //   patchData();  
 //   deleteData(); 
-  
+
+
+
+
