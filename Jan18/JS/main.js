@@ -85,3 +85,45 @@
 
 
 //ternary operator
+let age = 18;
+
+// if(age<18){
+//     console.log("Adult");
+    
+// }
+// else{
+//     console.log("Teenager");    
+// }
+let Adult = age<=18 ? "Adult" :"Teenager"
+// console.log(Adult);
+
+
+// var x = 20;
+// var d = 60;
+// console.log(x+d);
+// b =60;
+// console.log(d+b);
+console.log(k);
+
+var k = 50;
+let h;
+console.log(h);
+
+function add(){
+    let b = 60;
+    console.log(x+b); 
+    function newOnw (){
+        let x = 10;
+    
+        
+    }  
+
+    newOnw()
+    console.log(x);
+    
+}
+add()
+
+// console.log(x);
+
+
