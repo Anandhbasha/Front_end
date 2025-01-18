@@ -22,7 +22,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculator</title>
+  <title>Calc</title>
   <style>
     .calculator {
       width: 200px;
@@ -64,40 +64,33 @@
   </div>
 
   <script>
-    // Calculator Display
     const display = document.getElementById('display');
 
-    // Get all input buttons using querySelectorAll
     const buttons = document.querySelectorAll('input');
 
-    // Initialize an empty string for the current input
     let currentInput = '';
 
-    // Loop through all buttons and add event listeners
     for (let i = 0; i < buttons.length; i++) {
       buttons[i].addEventListener('click', function () {
         const value = buttons[i].value;
         // console.log(value);
         
 
-        // Handle different button values
         if (value === 'C') {
-          currentInput = ''; // Clear the display
+          currentInput = ''; 
         } else if (value === '=') {
           try {
-            currentInput = eval(currentInput); // Evaluate the input
+            currentInput = eval(currentInput); 
             // console.log(currentInput);
             
           } catch (e) {
-            currentInput = 'Error'; // Show error for invalid expressions
+            currentInput = 'Error'; 
           }
         } else {
-          currentInput += value; // Append the button value to the input
+          currentInput += value; 
           console.log(currentInput);
           
         }
-
-        // Update the display
         display.value = currentInput;
       });
     }

@@ -31,13 +31,13 @@
 // let s = z%2;
 // console.log(s);
 
-let b = 20;
+// let b = 20;
 
-let c = b;
-console.log(++b);
+// let c = b;
+// console.log(++b);
 
 
-console.log(c);
+// console.log(c);
 
 
 // types of data primitive data types
@@ -58,9 +58,9 @@ console.log(c);
 //conditional operator
 // ==,===comparison operator
 //Grater then
-let d = 10;
-let h = 50;
-console.log(d<=h);
+// let d = 10;
+// let h = 50;
+// console.log(d<=h);
 
 // less then 
 //AND
