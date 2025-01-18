@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,14 +6,101 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- <template id="myTemplate">
+     <template id="myTemplate">
         <div class="card">
           <h2>Title</h2>
           <p>Description</p>
         </div>
-      </template> -->
+      </template> 
       <h1></h1>
-    <!-- <script src="main.js"></script> -->
+     <script src="main.js"></script> 
      <script src="main.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <style>
+    .calculator {
+      width: 200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 5px;
+    }
+    .calculator input {
+      padding: 15px;
+      font-size: 16px;
+      text-align: center;
+    }
+    #display {
+      grid-column: span 4;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="display" disabled>
+    <input type="button" value="7">
+    <input type="button" value="8">
+    <input type="button" value="9">
+    <input type="button" value="/">
+    <input type="button" value="4">
+    <input type="button" value="5">
+    <input type="button" value="6">
+    <input type="button" value="*">
+    <input type="button" value="1">
+    <input type="button" value="2">
+    <input type="button" value="3">
+    <input type="button" value="-">
+    <input type="button" value="C">
+    <input type="button" value="0">
+    <input type="button" value="=">
+    <input type="button" value="+">
+  </div>
+
+  <script>
+    // Calculator Display
+    const display = document.getElementById('display');
+
+    // Get all input buttons using querySelectorAll
+    const buttons = document.querySelectorAll('input');
+
+    // Initialize an empty string for the current input
+    let currentInput = '';
+
+    // Loop through all buttons and add event listeners
+    for (let i = 0; i < buttons.length; i++) {
+      buttons[i].addEventListener('click', function () {
+        const value = buttons[i].value;
+        // console.log(value);
+        
+
+        // Handle different button values
+        if (value === 'C') {
+          currentInput = ''; // Clear the display
+        } else if (value === '=') {
+          try {
+            currentInput = eval(currentInput); // Evaluate the input
+            // console.log(currentInput);
+            
+          } catch (e) {
+            currentInput = 'Error'; // Show error for invalid expressions
+          }
+        } else {
+          currentInput += value; // Append the button value to the input
+          console.log(currentInput);
+          
+        }
+
+        // Update the display
+        display.value = currentInput;
+      });
+    }
+  </script>
 </body>
 </html>
