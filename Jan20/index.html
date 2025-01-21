@@ -118,11 +118,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Canvas Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+    }
+    canvas {
+      border: 2px solid #333;
+    }
+  </style>
 </head>
 <body>
-    
+  <h1>HTML Canvas Example</h1>
+  <canvas id="myCanvas" width="400" height="400"></canvas>
+
+  <script>
+    // Get the canvas element
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // Draw a filled circle
+    ctx.beginPath();
+    ctx.arc(200, 200, 100, 0, 2 * Math.PI); // (x, y, radius, startAngle, endAngle)
+    ctx.fillStyle = '#3498db';
+    ctx.fill();
+    ctx.closePath();
+
+    // Draw a rectangle
+    ctx.beginPath();
+    ctx.rect(50, 50, 100, 50); // (x, y, width, height)
+    ctx.fillStyle = '#e74c3c';
+    ctx.fill();
+    ctx.closePath();
+
+    // Draw a line
+    ctx.beginPath();
+    ctx.moveTo(0, 0); // Starting point
+    ctx.lineTo(400, 400); // Ending point
+    ctx.strokeStyle = '#2ecc71';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+    ctx.closePath();
+
+    // Draw a text
+    ctx.font = '20px Arial';
+    ctx.fillStyle = '#34495e';
+    ctx.fillText('Hello Canvas!', 140, 300);
+  </script>
 </body>
 </html>
