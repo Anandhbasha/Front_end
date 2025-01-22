@@ -1,0 +1,16 @@
+.Cards{
+    border: 1px solid magenta;
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    background-color: orange;
+    border-radius: 15px;
+}
+.card_Bottom{
+    padding: 15px;
+}
+.card_Bottom > button{
+    padding: 8px 15px;
+    border-radius: 15px;
+    border: none;
+}
