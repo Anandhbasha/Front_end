@@ -79,3 +79,37 @@
 
 
 
+
+let age = 18;
+// if(age<=18){
+//     console.log("Adult");
+    
+// }else{
+//     console.log("Teenage");
+    
+// }
+//ternary operator
+let isAdult = (age<=18)? "Adult":"Teenage";
+console.log(isAdult);
+
+//and 
+
+if(10<15 && 20<50 && 15<20){
+    console.log("And operator");
+    
+}else{
+    console.log("And is not working");
+    
+}
+//OR
+if(10>15 || 20>50 || 15>20){
+    console.log("Or operator");
+    
+}else{
+    console.log("Or is not working");
+    
+}
+if(10!=5){
+    console.log("Not equal");
+    
+}
