@@ -2,7 +2,7 @@ import Info from "./Info";
 
 const App = ()=>{
   const details = {
-    name:"sathosh",
+    name:"Sathosh",
     age:26,
     Gender:"Male",
     Location:"CBE"
