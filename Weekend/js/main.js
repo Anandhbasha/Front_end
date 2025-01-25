@@ -128,8 +128,7 @@
 
     //Non-Premitive    
     //array
-    let arr = [10,"cft",30,42]
-    console.log(arr[1]);
+    
     
     //object
     const person = {
@@ -144,9 +143,80 @@
             }
         }
     }
-    console.log(person.parents.siblings.sisters);
+    // console.log(person.parents.siblings.sisters);
+
+
+
+
+
+    ///ES6 concepts
+
+    let arr = [10,"cft",30,42]
+
+    // for (const element of arr) {
+    //         console.log(element);
+            
+    // }
+    
+    // arr.map((x)=>console.log(x))
+    //normal function
+    // function add(){
+
+    // }
+    // //arrow function
+    // let minus = ()=>{
+
+    // }
+
+    // minus();
+
+    // //IFFI
+    // let name = function(){
+
+    // }
+
+    // //anonomus function
+    // let anno = (){
+
+    // }
+
+    // reduce
+        let marks = [53,61,70,81,95];
+    //     let sum = marks.reduce((acc,num)=>(acc+num))
+    //     console.log(sum);
+    // //filter
+    // let fill = marks.filter((x)=>x%2==0)
+    // console.log(fill);
+    // let store = indexof(53);
+    // console.log(store);
+        marks[2]=80;
+        marks[5]= 100;
+        delete marks[2]
+        console.log(marks);
+        
+        //push
+        marks.push(400)
+        marks.pop()
+        marks.unshift(400)
+        marks.shift()
+        let local = marks.slice(1,2)
+        console.log(local);
+        let word = "Hello/world"
+        console.log(word.split("/"));
+
+        // console.log(marks.indexOf(80));
+       const num2 = marks.find((mark)=> mark===81)
+       console.log(num2);
+       
+        
+        
+        
+        //pop
+        console.log(marks);
+    
+    
     
 
-
-
+      
+        
 
