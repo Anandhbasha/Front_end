@@ -1,0 +1,71 @@
+h1{
+    color: blue;
+}
+/*Psedou elements */
+/* h1:hover{
+    color: brown;
+    background-color: aqua;
+    font-size: 1.2em;
+} */
+h1::before{
+    content: "world";
+}
+h1::first-letter{
+    color: green;
+}
+p{
+    height: 20vh;
+}
+/* positions 
+    Static
+    fixed
+    sticky
+    relative 
+    absolute
+*/
+/* .heading{
+    position: sticky;
+    top: 100px;
+    left: 0;
+} */
+ .heading{
+    position: relative;
+ }
+ .box{
+    height: 20vh;
+    width: 300px;
+    background-color: red;
+    display: flex;justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    /* margin-right: 5px;
+    margin-bottom: 5px; */
+ }
+ /* .box1{
+    height: 10vh;
+    width: 150px;
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+ } */
+
+ /* flex */
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    gap: 5px;
+    justify-content:space-evenly ;
+    align-items: flex-end;
+    color: white;
+    flex-wrap: wrap;
+}
+.box1{
+    order: 3;
+    /* flex-shrink: 0; */
+    flex-basis: 500px;
+}
+.box3{
+    order: 1;
+}

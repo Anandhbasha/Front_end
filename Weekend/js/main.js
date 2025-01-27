@@ -206,8 +206,7 @@
 
         // console.log(marks.indexOf(80));
        const num2 = marks.find((mark)=> mark===81)
-       console.log(num2);
-       
+       console.log(num2);  
         
         
         
