@@ -1,0 +1,81 @@
+.box{
+    /* max-width: 600px; */
+    /* min-width: 500px; */
+    /* width: calc(100% - 400px); */
+    width: 100px;
+    height: 200px;
+    background-color: pink;
+    overflow-y: visible;
+    /* opacity: .5; */
+    /* position: relative; */
+    /* float: right; */
+    margin-top:500px ;
+    margin-left: 400px;
+    /* transition: 2s ease-in; */
+    /* animation-name: ;
+    animation-duration: ;
+    animation-iteration-count: ; */
+    animation: colorchange 10s infinite;
+}
+@keyframes colorchange {
+    0%{
+        background-color: green;
+    }
+    50%{
+        background-color: black;
+    }
+    100%{
+        background-color: rebeccapurple;
+    }
+    
+}
+.box1{
+    background-color: black;
+    width: 400px;
+    height: 100px;
+}
+.box > p::selection{
+    color: red;
+    background-color: chartreuse;
+}
+.box >p::first-line{
+    font-size: 5em;
+    color: orange;
+}
+ul >li::marker{
+    color: purple;
+    font-size: 2.2em;
+}
+p{
+    /* opacity: .8; */
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 100px;
+}
+.box:hover p{
+    display: block;
+}
+table{
+    border-collapse: collapse;
+    text-align: right;
+    vertical-align: center;
+}
+th,td{
+    border: 2px solid rgb(7, 129, 66);
+    color: rgb(4, 139, 97);
+}
+h1{
+    text-transform: capitalize;
+    text-decoration: none;
+    letter-spacing: 5px;
+    float: left;
+}
+/* animation */
+/* .box:hover{
+    transform: translate(100px,400px);
+    transform: rotate(45deg);
+    transform: scale(1.5);
+    transition: 2s ease;
+} */
+
