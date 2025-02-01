@@ -1,0 +1,68 @@
+/* margin padding border width height position*/
+/* Positions */
+/* static
+fixed
+sticky
+relative
+absolute */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head{
+    background-color: rgb(252, 31, 7);
+    color: white;
+    font-size: 1.6em;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin: 10px;
+    padding: 100px;
+    /* background-image: url(./download.jpeg); */
+    /* background-repeat: no-repeat; */
+    background: linear-gradient(#02020282, #01010cab, #1c361c08),url(./download.jpeg) no-repeat;
+    background-size: contain;
+    background-position: fixed;
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    background-color: peru;
+    /* margin: 200px 100px 10px 0px; */
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.box1{
+    background-color: aqua;
+    border: 5px solid black;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    
+    /* border-radius: 10px 5px 20px 50px; */
+}
+.main{
+    background-color: red;
+    height: 20vh;
+    width: 100%;
+    position: sticky;
+    top: 100px;
+    left: 0;
+    /* height: 100vh; */
+    /* width: 500px; */
+    /* min-width: 600px; */
+    /* max-width: 600px; */
+    /* width: calc(100% - 500px); */
+}
+
+
+.box{
+    position: relative;
+}
+.box12{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
