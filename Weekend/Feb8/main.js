@@ -159,8 +159,8 @@
 //             },
 //             body:JSON.stringify({
               
-//             })
-//         }
+//         //     })
+//         // }
 //         // {
 //         //     method:"PUT",
 //         //     headers:{
@@ -191,7 +191,7 @@
 //DOM
 // Document Object Module
 
-    // let btn = document.getElementsByTagName('button')
+    // let btn = document.querySelectorAll('.btn')
     // for(let i=0;i<btn.length;i++){
     //     btn[i].addEventListener('click',()=>{
     //         console.log("Button Clicked");
@@ -249,3 +249,259 @@
 //     console.log(err);
     
 // })
+
+
+
+
+///DOM
+
+//function
+// function functionname(paramas){
+
+// }
+// functionname();
+//arrow function
+// const functionname = ()=>{console.log("Hello")}
+// functionname();
+// //iffi
+// const iffi = function(){
+
+// }
+// iffi()
+// // anonoums
+// const ananoums = (function (){
+
+// })
+// ananoums();
+
+// while
+// a = 10;
+// while(a<15){
+//     a++;
+//     console.log(a);
+    
+// }
+//do while
+// do{
+//     console.log("dowhile");
+    
+// }while(a>15)
+///for
+
+//lenth = 4
+//index = 0,1,2,3
+// console.log(arr[0]);
+// console.log(arr[1]);
+// console.log(arr[2]);
+// console.log(arr[3]);
+// for(let x = 0;x<arr.length;x++){
+//     console.log(arr[x]);    
+// }
+//for of
+// for(let x of arr){
+//     // x=0
+//     // x=1
+//     console.log(x);
+    
+// }
+//for in
+// for (let y in arr){
+//     console.log(arr[y]);
+    
+// }
+//foreach
+// arr.forEach((item)=>console.log(item))
+//map
+// arr.map((item)=>console.log(item))
+//reduce
+// let red = arr.reduce((acc,sum)=>acc+sum)
+// console.log(red);
+
+//filter
+// let fill = arr.filter((item)=>item%4===0)
+// console.log(fill);
+
+// arr.push(500)
+// console.log(arr);
+// arr.pop()
+// console.log(arr);
+// arr.unshift(1000)
+// console.log(arr);
+// arr.shift()
+// console.log(arr);
+// let finds = arr.find((item)=>item===50)
+// console.log(finds);
+// console.log(arr.includes(50));
+// console.log(arr.indexOf(50));
+
+//spread
+// let arr = [10,20,40,50]
+// let arr1 = [10,20,40,50]
+// let arr2 = [10,20,40,50]
+// let array = [...arr,...arr1,...arr2]
+// console.log(array);
+
+// //rest
+// let [first,sec,...rest_oper] = array
+// console.log("First Mark" + first);
+// console.log("sec Mark" + sec);
+// console.log("Others Mark" + rest_oper);
+
+// const person = {
+//     firstname:"xyx",
+//     lastname:"abc",
+//     parents:{
+//         dad:"bhjk",
+//         mom:"vjghj"
+//     }
+// }
+
+// const names  = person
+// console.log(names);
+
+// const firstname = {...person}
+// console.log(firstname);
+
+
+// setTimeout
+// setTimeout(()=>{
+//     console.log("Hello");
+    
+// },5000)
+// setInterval
+// setInterval(() => {
+//     console.log("Hello");
+// }, 2000);
+
+//callback
+// function minus (c){
+//     console.log(c-2);
+    
+// }
+// function add (){
+//     let a = 10;
+//     let b = 20
+//     // minus(c)
+//     return a+b
+// }
+// console.log(add());
+
+//Promise
+// const drinks = new Promise ((resolved,reject)=>{
+//     let drunk = false;
+//     if(drunk){
+//         resolved("He is drunked")
+//     }else{
+//         reject("He is not Drunkard")
+//     }
+// })
+// drinks.then((result)=>{
+//     console.log(result);
+    
+// }).catch((err)=>{
+//     console.log(err);
+    
+// })
+// const pro = ()=>{
+//     return new Promise ((resolved,reject)=>{
+//         let drunk = false;
+//         if(drunk){
+//             resolved("He is drunked")
+//         }else{
+//             reject("He is not Drunkard")
+//         }
+//     }).then((result)=>{
+//         console.log(result);
+        
+//     }).catch((err)=>{
+//         console.log(err);
+        
+//     })
+    
+// }
+
+// console.log(pro());
+
+//error handling
+//fetch
+// const drinks = new Promise ((resolved,reject)=>{
+//     fetch('https://jsonplaceholder.typicode.com/posts').then((res)=>{
+//         if(!res.ok){
+//             reject("unable to connect")          
+//         }else{
+//             let data = res.json()
+//             resolved(data)
+//         }
+//     })
+//     })
+//     drinks.then((result)=>{
+        
+//         console.log(result);
+        
+        
+//     }).catch((err)=>{
+//         console.log(err);
+        
+//     })
+//async
+const pro = async()=>{
+    try{
+        let res = await fetch('https://jsonplaceholder.typicode.com/posts/',{
+            method:"POST",
+            headers:{
+                "Content-Type":"application/json"
+            },
+            body:JSON.stringify({
+                title:"dddggdh"
+            })
+        })
+        if(!res.ok){
+            throw Error ("Unable to connect")       
+        }
+        else{
+            let data = await res.json()
+            console.log(data);
+            
+        }
+    }
+    catch(err){
+        console.log(err);
+        
+    }
+    
+    
+}
+// pro()
+//error handling
+//DOM
+
+// let btn = document.querySelectorAll('.btn')
+// for(let x=0;x<btn.length;x++){
+//     btn[x].addEventListener('click',()=>{
+//         btn.style.padding = "20px"
+//         btn.innerText = "Clicked"
+//     })
+// }
+
+
+
+// let div = document.createElement('div')
+// let button = document.createElement('button')
+// button.innerHTML = "Submit"
+// button.setAttribute("class","btn")
+// div.appendChild(button)
+// document.body.append(div)
+
+let headings  = ["SNO","Names","Age"]
+
+let table = document.createElement("table")
+let thead  = document.createElement("thead")
+headings.map((item)=>{
+    let th = document.createElement("th")
+    th.textContent  = item;
+    thead.appendChild(th)
+})
+let tbody  = document.createElement("tbody")
+table.appendChild(thead)
+table.appendChild(tbody)
+document.body.append(table)
