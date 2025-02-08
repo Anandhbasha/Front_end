@@ -1,4 +1,4 @@
-//setTimeout
+// setTimeout
 // setTimeout(()=>{
 //     console.log("Hello");
     
@@ -28,29 +28,46 @@
 //     // sub(c)
 //     return c
 // }
-
+// // adding()
 // console.log(adding());
 
 //Async
     //Promise
         // const booking = ()=>{
         //     return new Promise ((reject,resolved)=>{
-        //         let success = false;
+        //         let success = true;
         //         if(success){
         //             resolved("Ticket is Booked Amount of the Ticket :230")
         //         }
         //         else{
         //             reject("Unable to Book the Ticket")
         //         }
+        //     }).then((result)=>{
+        //         console.log(result);            
+        //     }).catch((error)=>{
+        //         console.log(error);
+                
         //     })
         // }
-        // bookingTicket.then((result)=>{
-        //     console.log(result);            
-        // }).catch((error)=>{
-        //     console.log(error);
-            
-        // })
+        // console.log(booking());
+        
 
+        // const bookingTicket =  new Promise ((reject,resolved)=>{
+        //             let success = true;
+        //             if(success){
+        //                 resolved("Ticket is Booked Amount of the Ticket :230")
+        //             }
+        //             else{
+        //                 reject("Unable to Book the Ticket")
+        //             }
+        //         })
+
+        //     bookingTicket.then((result)=>{
+        //         console.log(result);            
+        //     }).catch((error)=>{
+        //         console.log(error);
+                
+        //     })
         // const Employee1 = new Promise ((reject,resolved)=>{
         //     const Present = true;
         //     if(Present){
@@ -120,40 +137,55 @@
 //     })})
 //     APIS.then(async(succ)=>{
 //         let data = await succ.json()
+//         data.map((item)=>{
+//             console.log(item.userId);
+//             console.log(item.id);
+//             console.log(item.title);
+//             console.log(item.body);
+            
+//         })
 //         console.log(data);        
 //     }).catch((err)=>{
 //         console.log(err);
         
 //     })
 
-const datas = async()=>{
-    try{
-        const response = await fetch('https://jsonplaceholder.typicode.com/posts/30',
-        {
-            method:"PUT",
-            headers:{
-                "Content_type":"application/json"
-            },
-                body:JSON.stringify({
-                    userID:10,
-                    userName:"XYZ"
-                })
-        }
-        )
-    // console.log(response);
-        if(!response.ok){
-            console.log("Unale to connect API");        
-        }
-        let data = await response.json()
-        console.log(data);
-    }
-    catch(err){
-        console.log(err);
+// const datas = async()=>{
+//     try{
+//         const response = await fetch('https://jsonplaceholder.typicode.com/posts/10',{
+//             method:"DELETE",
+//             headers:{
+//                 "content-Type":"application/json"
+//             },
+//             body:JSON.stringify({
+              
+//             })
+//         }
+//         // {
+//         //     method:"PUT",
+//         //     headers:{
+//         //         "Content_type":"application/json"
+//         //     },
+//         //         body:JSON.stringify({
+//         //             userID:10,
+//         //             userName:"XYZ"
+//         //         })
+//         // }
+//         )
+//     // console.log(response);
+//         if(!response.ok){
+//             console.log("Unale to connect API");        
+//         }
+//         let data = await response.json()
+//         console.log(data);
+//     }
+//     catch(err){
+//         console.log(err);
         
-    }
+//     }
     
-}
-datas();
+// }
+// datas();
 
 
 //DOM
@@ -176,17 +208,44 @@ datas();
     // div.appendChild(h1)
     // document.body.append(div)
 
-    let heading = ["SNo","Name","Age"]
+    // let heading = ["SNo","Name","Age"]
 
-    let table = document.createElement('table')
-    let thead = document.createElement('thead')
-    for(let x of heading){
-        let th = document.createElement('th')
-        th.innerHTML = x
-        thead.appendChild(th)
-    }
-    let tbody = document.createElement('tbody')
-    table.appendChild(thead)
-    table.appendChild(tbody)
-    document.body.append(table)
+    // let table = document.createElement('table')
+    // let thead = document.createElement('thead')
+    // for(let x of heading){
+    //     let th = document.createElement('th')
+    //     th.innerHTML = x
+    //     thead.appendChild(th)
+    // }
+    // let tbody = document.createElement('tbody')
+    // table.appendChild(thead)
+    // table.appendChild(tbody)
+    // document.body.append(table)
     
+
+// const API = new Promise((reject,resolved)=>{
+//     fetch('https://jsonplaceholder.typicode.com/posts').then((success)=>{
+//         if(!success.ok){
+//            reject("unable ");
+            
+//         }
+//         else{
+//             resolved(success);
+//         }
+        
+        
+        
+//     }).catch((error)=>{
+//         reject("Unable to connect")
+//     })
+// })
+// APIS.then(async(res)=>{
+//     // console.log(res);
+//     let data = await res.json()
+//     console.log(data);
+    
+    
+// }).catch((err)=>{
+//     console.log(err);
+    
+// })
