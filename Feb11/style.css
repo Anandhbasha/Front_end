@@ -1,0 +1,39 @@
+/* flex */
+/* .boxes{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 5px;
+    /* text-align: center; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1{ 
+    flex-grow: 2;
+    /* flex-wrap: nowrap; */
+/* } */
+
+
+/* //grid */
+.boxes{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+    /* grid-template-columns: 1fr 1fr 1fr ; */
+    /* grid-template-columns: 300px 200px 300px; */
+    /* grid-template-columns: repeat(3,minmax(100px,1fr)); */
+    /* grid-template-columns: repeat(3,1fr); */
+}
+.box{
+    background-color: red;
+}

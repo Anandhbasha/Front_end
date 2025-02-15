@@ -1,0 +1,198 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* .boxes{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 100px 300px;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box{
+    background-color: purple;
+     width: 100px;
+    height: 100px; 
+}
+.box1{
+    grid-column: 1/4;
+} */
+
+
+.main{
+    display: grid;
+    /* grid-template-columns: repeat(4,1fr);*/
+    height: 100vh; 
+    grid-template-areas: 
+    "h h h h"
+    "ml ml e s"
+    "f f f f";
+}
+.head{
+    background-color: orangered;
+    /* grid-column: span 4; */
+    grid-area: h;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainLeft{
+    background-color: blue;
+    /* grid-column: span 2; */
+    grid-area: ml;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.empty{
+    background-color: gray;
+    grid-area: e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar{
+    background-color: red;
+    grid-area: s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    background-color: purple;
+    grid-area: f;
+    /* grid-column: span 4; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .box{
+    box-shadow:1px 1px 2px 1.5px rgb(209, 209, 66) ;
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    /* border: 2px solid blue; */
+    /* border-radius: 10px 15px 100px 2px; */
+    /* margin: 100px 200px 10px 300px; */
+    /* padding: 50px 100px; */
+    /* transform: translate(-150px,-50px); */
+    /* transform: rotate(45deg); */
+    /* transform: scale(1);
+    transition: 4s ease;
+    opacity: 0.5; */
+    /* display: flex; */
+    /* flex-direction: column;
+    cursor: pointer;
+    transform: translateX(100px); */
+    /* position: relative;
+}
+p{
+    display: flex;
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    z-index: 10000;
+    flex-direction: column;
+    transition: 5s ease-in;
+    font-family: "Open Sans", serif;
+    font-size: 2.5em;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 10px;
+    text-transform: lowercase;
+    text-align: center;
+    text-shadow: 3px 2px rgba(0, 0, 0, 0.44);
+    
+}
+p:hover{
+    transform: scale(1.2); 
+    transition: 4s ease; 
+    text-decoration: line-through;
+    transition: 5s ease-in;
+}
+a{
+    text-decoration: none;
+    color: #000;
+} */
+/* .box::after{
+    
+} */
+
+/* `font-family`
+- `font-size`
+- `font-style`
+- `font-variant`
+- `font-weight`
+- `letter-spacing`
+- `line-height`
+- `text-align`
+- `text-decoration`
+- `text-indent`
+- `text-overflow`
+- `text-shadow`
+- `text-transform`
+- `white-space`
+- `word-spacing` */
+
+
+/* position */
+/* fixed*/
+/* .nav{
+    background-color: rebeccapurple;
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+} */
+
+
+/* static */
+/* sticky */
+.nav{
+    background-color: rebeccapurple;
+    height: 10vh;
+    width: 100%;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+/* relative */
+.box{
+    /* position: relative; */
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    animation: bgcolor 4s infinite;
+}
+@keyframes bgcolor {
+    0%{
+        background-color: pink;
+    }
+    25%{
+        background-color: red;
+    }
+    50%{
+        background-color: yellow;
+    }
+    100%{
+        background-color: aqua;
+    }
+}
+
+@media (min-width:500px) {
+    .box{
+        display: none;
+    }
+}
+/*Absolute */
+/* .box1{
+    position: absolute;
+    top: 50px;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+} */
