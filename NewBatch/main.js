@@ -67,11 +67,11 @@ let age = 20;
        
     //non premitive
         //Object
-const person = {
-    name:"xyz",
-    age:20,
-    place:"Cbe"
-}
+// const person = {
+//     name:"xyz",
+//     age:20,
+//     place:"Cbe"
+// }
 // console.log(person);
 
 //         //array
@@ -132,21 +132,147 @@ const person = {
     // numbers.forEach((y)=>console.log(y))
 
 //Es6
-let numbers = [10,20,30,40,50,60]
-//map
-numbers.map((y)=>console.log(y))
-//reduce
-let total = numbers.reduce((acc,curr)=>acc+curr)
-//acc = 0 //curr = 10 = 0+10 = 10
-//acc=10 curr = 20 20+10 = 30
-//acc = 30 curr = 30 60
-// 60+40
-//100+50
-//150+60
-//210 
-console.log(total);
+// let numbers = [10,20,30,40,50,60]
+// //map
+// numbers.map((y)=>console.log(y))
+// //reduce
+// let total = numbers.reduce((acc,curr)=>acc+curr)
+// //acc = 0 //curr = 10 = 0+10 = 10
+// //acc=10 curr = 20 20+10 = 30
+// //acc = 30 curr = 30 60
+// // 60+40
+// //100+50
+// //150+60
+// //210 
+// console.log(total);
 
-//filter
-let fill = numbers.filter((num)=>num%4==0)
-console.log(fill);
+// //filter
+// let fill = numbers.filter((num)=>num%4==0)
+// console.log(fill);
 
+const person = {
+    name:"xyz",
+    age:20,
+    place:"Cbe",
+    parents:{
+        dad:"fgfff",
+        mom:"klpjkjk",
+        siblings:{
+            brothers:"jhjh",
+            sisters:{
+                sis1:"mjhnmn",
+                sis2:"kmkjklmkl"
+            }
+        }
+    }
+}
+
+person.place = "Coimbatore"
+
+console.log(person.place);
+
+const student = [
+    {
+        name:"xyz",
+        age:20,
+        place:"Cbe",
+        rollnumber:"54545454",
+        marks:[100,80,80,70,50]
+    },
+    {
+        name:"abc",
+        age:20,
+        place:"Cbe",
+        rollnumber:"5455444",
+        marks:[100,80,80,70,50]
+    },
+    {
+        name:"xyz",
+        age:20,
+        place:"Cbe",
+        rollnumber:"54554545",
+        marks:[100,80,80,70,50]
+    },
+    {
+        name:"fed",
+        age:20,
+        place:"Cbe",
+        rollnumber:"1555554",
+        marks:[100,80,80,70,50]
+    },
+    {
+        name:"ggr",
+        age:20,
+        place:"Cbe",
+        rollnumber:"47848",
+        marks:[100,80,80,70,50]
+    },
+    {
+        name:"dsff",
+        age:20,
+        place:"Cbe",
+        rollnumber:"24544554",
+        marks:[100,80,80,70,50]
+    }
+]
+student.map((item)=>console.log(item.marks.reduce((acc,sum)=>acc+sum)))
+
+
+//object Iteration
+// Object.entries(person).map((item)=>console.log(item))
+// Object.values(person).map((item)=>console.log(item))
+// Object.keys(person).map((item)=>console.log(item))
+
+// //Destructure
+
+// const {name} = person;
+// console.log(name);
+let marks = [100,80,80,70,50];
+let marks1 = [10,70,50,40,50];
+
+//rest operator
+let [a,b,...c] = marks
+
+console.log(a);
+console.log(b);
+console.log(c);
+
+//spread operator
+let marks2 = [...marks,...marks1]
+console.log(marks2);
+
+//push
+marks2.push(1000)
+console.log(marks2);
+
+//pop
+marks2.pop()
+console.log(marks2);
+//shift
+marks2.shift()
+// marks2[6]=5000;
+console.log(marks2);
+//unshift
+marks2.unshift(557454)
+console.log(marks2);
+//find
+const finding = marks2.find((item)=>item===82)
+console.log(finding);
+
+//indexof
+console.log(marks2.indexOf(80));
+
+//includes
+
+console.log(marks2.includes(88));
+
+//setTimeout
+setTimeout(()=>{
+    console.log("Settimeout is working");
+    
+},2000)
+//setInterval
+setInterval(()=>{
+    console.log("SetInterval is working");
+    
+},2000)
