@@ -1,441 +1,613 @@
-// // //Hoisting
-// //     //var
-// //     console.log(x);
+// // // //Hoisting
+// // //     //var
+// // //     console.log(x);
 
-// //     var x =10
-// //     //let 
-// //     console.log(y);
+// // //     var x =10
+// // //     //let 
+// // //     console.log(y);
 
-// //     let y = 20;
-// //     //const
+// // //     let y = 20;
+// // //     //const
 
-// // function add(){
-// //     let b=20;   
-// //     if(b<30){
+// // // function add(){
+// // //     let b=20;   
+// // //     if(b<30){
         
         
-// //     }
-// //     console.log(b);
-// // }
-// // add()
+// // //     }
+// // //     console.log(b);
+// // // }
+// // // add()
 
-// //And &&  Or || Not !=
+// // //And &&  Or || Not !=
 
-// // if(10<15 && 20>30 && 5<8){
-// //     console.log("Hello");
+// // // if(10<15 && 20>30 && 5<8){
+// // //     console.log("Hello");
     
-// // }
+// // // }
 
-// // if(10>15 || 20>30 || 5<8){
-// //     console.log("Hello");
+// // // if(10>15 || 20>30 || 5<8){
+// // //     console.log("Hello");
     
-// // }
+// // // }
 
-// // if(10!=20){
-// //     console.log("Hello");
+// // // if(10!=20){
+// // //     console.log("Hello");
     
-// // }
+// // // }
 
-// //ternary operator ?:
-// let age = 20;
-// // if(age<18){
-// //     console.log("Teenager");
+// // //ternary operator ?:
+// // let age = 20;
+// // // if(age<18){
+// // //     console.log("Teenager");
     
-// // }else{
-// //     console.log("Adult");
+// // // }else{
+// // //     console.log("Adult");
     
-// // }
-// // console.log(age<18?"Teenage":"Adult")
+// // // }
+// // // console.log(age<18?"Teenage":"Adult")
 
-// //increment
+// // //increment
 
-// // console.log(age++);
-// // console.log(age);
+// // // console.log(age++);
+// // // console.log(age);
 
-// //decrement
-// // console.log(--age);
+// // //decrement
+// // // console.log(--age);
 
-// //data types
-//     //premitive
-//         // string
-//         // numbers
-//         // Boolean
-//         // undefined
-//          //NULL
-//          //NAN       
+// // //data types
+// //     //premitive
+// //         // string
+// //         // numbers
+// //         // Boolean
+// //         // undefined
+// //          //NULL
+// //          //NAN       
         
        
-//     //non premitive
-//         //Object
-// // const person = {
-// //     name:"xyz",
-// //     age:20,
-// //     place:"Cbe"
-// // }
-// // console.log(person);
+// //     //non premitive
+// //         //Object
+// // // const person = {
+// // //     name:"xyz",
+// // //     age:20,
+// // //     place:"Cbe"
+// // // }
+// // // console.log(person);
 
-// //         //array
-// //         const numbers = [100,200,300,"names",undefined]
-// //         console.log(numbers[0]);
-// //         console.log(numbers[1]);
-// //         console.log(numbers[2]);
-// //         console.log(numbers[3]);
-// //         console.log(numbers[4]);
+// // //         //array
+// // //         const numbers = [100,200,300,"names",undefined]
+// // //         console.log(numbers[0]);
+// // //         console.log(numbers[1]);
+// // //         console.log(numbers[2]);
+// // //         console.log(numbers[3]);
+// // //         console.log(numbers[4]);
         
-//         //function
+// //         //function
 
-//             //normal function
-//             // function add(){
-//             //     console.log("Add is working");
+// //             //normal function
+// //             // function add(){
+// //             //     console.log("Add is working");
                 
-//             // }
-//             // add()
-//             //arrow function
-//             // const add = ()=>{console.log("Arrow is working")}
-//             // add()
-//             // //ananoums function
-//             // const ananoums = (function(){console.log("Ana is working")})
-//             // ananoums()
-//             // //IFFI        
-//             // const IFFI = function(){console.log("IFFI is working")}
-//             // IFFI()
-// // Loops
-//     //while
-//     // let a = 10;
-//     // b=20;
-//     // while(a<b){
-//     //     console.log("While");
-//     //     b--
+// //             // }
+// //             // add()
+// //             //arrow function
+// //             // const add = ()=>{console.log("Arrow is working")}
+// //             // add()
+// //             // //ananoums function
+// //             // const ananoums = (function(){console.log("Ana is working")})
+// //             // ananoums()
+// //             // //IFFI        
+// //             // const IFFI = function(){console.log("IFFI is working")}
+// //             // IFFI()
+// // // Loops
+// //     //while
+// //     // let a = 10;
+// //     // b=20;
+// //     // while(a<b){
+// //     //     console.log("While");
+// //     //     b--
         
-//     // }
-//     //do while
-//     // do{
-//     //     console.log("Hello");
+// //     // }
+// //     //do while
+// //     // do{
+// //     //     console.log("Hello");
         
-//     // }while(10>15)
+// //     // }while(10>15)
 
-//     // let numbers = [10,20,30,40,50,60]
-//     //for
-//     // for(let b=0;b<numbers.length;b++){
-//     //     console.log(numbers[b]);
+// //     // let numbers = [10,20,30,40,50,60]
+// //     //for
+// //     // for(let b=0;b<numbers.length;b++){
+// //     //     console.log(numbers[b]);
         
-//     // }
-//     //for of 
-//     // for(let x of numbers){
-//     //     console.log(x);        
-//     // }
-//     // //for in //for in for taking the index of array
-//     // for(let x in numbers){
-//     //     console.log(numbers[x]);        
-//     // }
-//     //foreach
-//     // numbers.forEach((y)=>console.log(y))
+// //     // }
+// //     //for of 
+// //     // for(let x of numbers){
+// //     //     console.log(x);        
+// //     // }
+// //     // //for in //for in for taking the index of array
+// //     // for(let x in numbers){
+// //     //     console.log(numbers[x]);        
+// //     // }
+// //     //foreach
+// //     // numbers.forEach((y)=>console.log(y))
 
-// //Es6
-// // let numbers = [10,20,30,40,50,60]
-// // //map
-// // numbers.map((y)=>console.log(y))
-// // //reduce
-// // let total = numbers.reduce((acc,curr)=>acc+curr)
-// // //acc = 0 //curr = 10 = 0+10 = 10
-// // //acc=10 curr = 20 20+10 = 30
-// // //acc = 30 curr = 30 60
-// // // 60+40
-// // //100+50
-// // //150+60
-// // //210 
-// // console.log(total);
+// // //Es6
+// // // let numbers = [10,20,30,40,50,60]
+// // // //map
+// // // numbers.map((y)=>console.log(y))
+// // // //reduce
+// // // let total = numbers.reduce((acc,curr)=>acc+curr)
+// // // //acc = 0 //curr = 10 = 0+10 = 10
+// // // //acc=10 curr = 20 20+10 = 30
+// // // //acc = 30 curr = 30 60
+// // // // 60+40
+// // // //100+50
+// // // //150+60
+// // // //210 
+// // // console.log(total);
 
-// // //filter
-// // let fill = numbers.filter((num)=>num%4==0)
-// // console.log(fill);
+// // // //filter
+// // // let fill = numbers.filter((num)=>num%4==0)
+// // // console.log(fill);
 
-// const person = {
-//     name:"xyz",
-//     age:20,
-//     place:"Cbe",
-//     parents:{
-//         dad:"fgfff",
-//         mom:"klpjkjk",
-//         siblings:{
-//             brothers:"jhjh",
-//             sisters:{
-//                 sis1:"mjhnmn",
-//                 sis2:"kmkjklmkl"
-//             }
-//         }
-//     }
-// }
-
-// person.place = "Coimbatore"
-
-// console.log(person.place);
-
-// const student = [
-//     {
-//         name:"xyz",
-//         age:20,
-//         place:"Cbe",
-//         rollnumber:"54545454",
-//         marks:[100,80,80,70,50]
-//     },
-//     {
-//         name:"abc",
-//         age:20,
-//         place:"Cbe",
-//         rollnumber:"5455444",
-//         marks:[100,80,80,70,50]
-//     },
-//     {
-//         name:"xyz",
-//         age:20,
-//         place:"Cbe",
-//         rollnumber:"54554545",
-//         marks:[100,80,80,70,50]
-//     },
-//     {
-//         name:"fed",
-//         age:20,
-//         place:"Cbe",
-//         rollnumber:"1555554",
-//         marks:[100,80,80,70,50]
-//     },
-//     {
-//         name:"ggr",
-//         age:20,
-//         place:"Cbe",
-//         rollnumber:"47848",
-//         marks:[100,80,80,70,50]
-//     },
-//     {
-//         name:"dsff",
-//         age:20,
-//         place:"Cbe",
-//         rollnumber:"24544554",
-//         marks:[100,80,80,70,50]
-//     }
-// ]
-// student.map((item)=>console.log(item.marks.reduce((acc,sum)=>acc+sum)))
+// // const person = {
+// //     names:"xyz",
+// //     age:20,
+// //     place:"Cbe",
+// //     parents:{
+// //         dad:"fgfff",
+// //         mom:"klpjkjk",
+// //         siblings:{
+// //             brothers:"jhjh",
+// //             sisters:{
+// //                 sis1:"mjhnmn",
+// //                 sis2:"kmkjklmkl"
+// //             }
+// //         }
+// //     }
+// // }
+// // const {names,age} = person
+// // console.log(names,age);
 
 
-// //object Iteration
-// // Object.entries(person).map((item)=>console.log(item))
-// // Object.values(person).map((item)=>console.log(item))
-// // Object.keys(person).map((item)=>console.log(item))
 
-// // //Destructure
+// // const arr = [10,20,30,40,50]
+
+// // const [a,b]= arr
+// // console.log(a,b);
+
+
+
+// // console.log(person.name);
+
+
+// // person.place = "Coimbatore"
+
+// // console.log(person.place);
+
+// // const student = [
+// //     {
+// //         name:"xyz",
+// //         age:20,
+// //         place:"Cbe",
+// //         rollnumber:"54545454",
+// //         marks:[100,80,80,70,50]
+// //     },
+// //     {
+// //         name:"abc",
+// //         age:20,
+// //         place:"Cbe",
+// //         rollnumber:"5455444",
+// //         marks:[100,80,80,70,50]
+// //     },
+// //     {
+// //         name:"xyz",
+// //         age:20,
+// //         place:"Cbe",
+// //         rollnumber:"54554545",
+// //         marks:[100,80,80,70,50]
+// //     },
+// //     {
+// //         name:"fed",
+// //         age:20,
+// //         place:"Cbe",
+// //         rollnumber:"1555554",
+// //         marks:[100,80,80,70,50]
+// //     },
+// //     {
+// //         name:"ggr",
+// //         age:20,
+// //         place:"Cbe",
+// //         rollnumber:"47848",
+// //         marks:[100,80,80,70,50]
+// //     },
+// //     {
+// //         name:"dsff",
+// //         age:20,
+// //         place:"Cbe",
+// //         rollnumber:"24544554",
+// //         marks:[100,80,80,70,50]
+// //     }
+// // ]
+
+// // const name = student.map((item)=>item.name)
+// // console.log(name);
+
+// // student.map((item)=>console.log(item.marks.reduce((acc,sum)=>acc+sum)))
+
+
+// // //object Iteration
+// // // Object.entries(person).map((item)=>console.log(item))
+// // // Object.values(person).map((item)=>console.log(item))
+// // // Object.keys(person).map((item)=>console.log(item))
+
+// // // //Destructure
 
 // // const {name} = person;
 // // console.log(name);
-// let marks = [100,80,80,70,50];
-// let marks1 = [10,70,50,40,50];
+// // let marks = [100,80,80,70,50];
+// // let marks1 = [10,70,50,40,50];
 
 // //rest operator
-// let [a,b,...c] = marks
+// // let [a,b,...c] = marks
 
-// console.log(a);
-// console.log(b);
-// console.log(c);
+// // console.log(a);
+// // console.log(b);
+// // console.log(c);
 
-// //spread operator
-// let marks2 = [...marks,...marks1]
-// console.log(marks2);
+// // spread operator
+// // let marks2 = [...marks,...marks1]
+// // console.log(marks2);
 
-// //push
-// marks2.push(1000)
-// console.log(marks2);
+// // //push
+// // marks2.push(1000)
+// // console.log(marks2);
 
-// //pop
-// marks2.pop()
-// console.log(marks2);
-// //shift
-// marks2.shift()
-// // marks2[6]=5000;
-// console.log(marks2);
-// //unshift
-// marks2.unshift(557454)
-// console.log(marks2);
+// // //pop
+// // marks2.pop()
+// // console.log(marks2);
+// // //shift
+// // marks2.shift()
+// // // marks2[6]=5000;
+// // console.log(marks2);
+// // //unshift
+// // marks2.unshift(557454)
+// // console.log(marks2);
 // //find
-// const finding = marks2.find((item)=>item===82)
-// console.log(finding);
+// // const finding = marks2.find((item)=>item===80)
+// // console.log(finding);
 
 // //indexof
-// console.log(marks2.indexOf(80));
+// // console.log(marks2.indexOf(80));
 
-// //includes
+// // //includes
 
-// console.log(marks2.includes(88));
+// // console.log(marks2.includes(100));
 
-// //setTimeout
-// setTimeout(()=>{
-//     console.log("Settimeout is working");
+// // //setTimeout
+// // setTimeout(()=>{
+// //     console.log("Settimeout is working");
     
-// },2000)
-// //setInterval
-// setInterval(()=>{
-//     console.log("SetInterval is working");
+// // },2000)
+// // //setInterval
+// // setInterval(()=>{
+// //     console.log("SetInterval is working");
     
-// },2000)
+// // },2000)
 
 
 
-// const add = ()=>{
-//     console.log("Button Clicked");    
-// }
+// // const add = ()=>{
+// //     console.log("Button Clicked");    
+// // }
 // //addEventListener
-// let button = document.getElementById('btn')
-// button.addEventListener('click',()=>{
-//     console.log("Btn Clicked");
-//     button.innerText="Clicked"
+// // let button = document.getElementById('btn')
+// // button.addEventListener('click',()=>{
+// //     console.log("Btn Clicked");
+// //     button.innerText="Clicked"
     
-// })
-//Events
-    //onchage
-    //oninput
-    //onsubmit
-    //onclick
-    //ondrag
+// // })
+// //Events
+//     //onchage
+//     //oninput
+//     //onsubmit
+//     //onclick
+//     //ondrag
 
-//Async
-    //promise
-    // const bookTicket = new Promise((reject,resolved)=>{
-    //     let success = false;
-    //     if(success){
-    //         resolved("Ticket Booked Sucessfully")
-    //     }
-    //     else{
-    //         reject("Unable to Book the Ticket")
-    //     }
-    // })
-    // bookTicket.then((result)=>{
-    //     console.log(result);
+// //Async
+//     //promise
+//     // const bookTicket = new Promise((reject,resolved)=>{
+//     //     let success = false;
+//     //     if(success){
+//     //         resolved("Ticket Booked Sucessfully")
+//     //     }
+//     //     else{
+//     //         reject("Unable to Book the Ticket")
+//     //     }
+//     // })
+//     // bookTicket.then((result)=>{
+//     //     console.log(result);
         
-    // }).catch((error)=>{
-    //     console.log(error);
-    // })
+//     // }).catch((error)=>{
+//     //     console.log(error);
+//     // })
 
 
 
-    //all
-    const friend1 = new Promise ((resolved,reject)=>{
-        let reached = true;
-        if(reached){
-            resolved("Freind 1 Reached Succesfully")
-        }else{
-            reject(" Freind 1 Not yet Reached Home")
-        }
-    })
-    const friend2 = new Promise ((resolved,reject)=>{
-        let reached = true;
-        if(reached){
-            resolved("Freind 2 Reached Succesfully")
-        }else{
-            reject(" Freind 2 Not yet Reached Home")
-        }
-    })
-    const friend3 = new Promise ((resolved,reject)=>{
-        let reached = true;
-        if(reached){
-            resolved("Freind 3 Reached Succesfully")
-        }else{
-            reject("Freind 3 Not yet Reached Home")
-        }
-    })
-    const friend4 = new Promise ((resolved,reject)=>{
-        let reached = true;
-        if(reached){
-            setTimeout(()=>{
-                resolved("Freind 4 Reached Succesfully")
-            },5000)
+//     //all
+//     // const friend1 = new Promise ((resolved,reject)=>{
+//     //     let reached = true;
+//     //     if(reached){
+//     //         resolved("Freind 1 Reached Succesfully")
+//     //     }else{
+//     //         reject(" Freind 1 Not yet Reached Home")
+//     //     }
+//     // })
+//     // const friend2 = new Promise ((resolved,reject)=>{
+//     //     let reached = true;
+//     //     if(reached){
+//     //         resolved("Freind 2 Reached Succesfully")
+//     //     }else{
+//     //         reject(" Freind 2 Not yet Reached Home")
+//     //     }
+//     // })
+//     // const friend3 = new Promise ((resolved,reject)=>{
+//     //     let reached = true;
+//     //     if(reached){
+//     //         resolved("Freind 3 Reached Succesfully")
+//     //     }else{
+//     //         reject("Freind 3 Not yet Reached Home")
+//     //     }
+//     // })
+//     // const friend4 = new Promise ((resolved,reject)=>{
+//     //     let reached = true;
+//     //     if(reached){
+//     //         setTimeout(()=>{
+//     //             resolved("Freind 4 Reached Succesfully")
+//     //         },5000)
             
-        }else{
-            reject("Freind 4 Not yet Reached Home")
-        }
-    })
+//     //     }else{
+//     //         reject("Freind 4 Not yet Reached Home")
+//     //     }
+//     // })
 
-    Promise.any([friend1,friend2,friend3,friend4]).then((res)=>{
-        console.log(res);
+//     // Promise.any([friend1,friend2,friend3,friend4]).then((res)=>{
+//     //     console.log(res);
         
-    }).catch((err)=>{
-        console.log(err);
+//     // }).catch((err)=>{
+//     //     console.log(err);
         
-    })
-    //race
-    //any 
-    // allsettled
+//     // })
+//     // //race
+//     // //any 
+//     // // allsettled
 
-    // function add(){
-    //     let a = 10;
-    //     b= 20;
-    //     c= a+b;
-    //     return c
-    // }
-    // console.log(add());
+//     // // function add(){
+//     // //     let a = 10;
+//     // //     b= 20;
+//     // //     c= a+b;
+//     // //     return c
+//     // // }
+//     // // console.log(add());
     
-    const promises = ()=>{
-        return(
-            new Promise((reject,resolved)=>{
-                let success = false;
-                if(success){
-                    resolved("Ticket Booked Sucessfully")
-                }
-                else{
-                    reject("Unable to Book the Ticket")
-                }
-            }).then((result)=>{
-                console.log(result);
+//     // const promises = ()=>{
+//     //     return(
+//     //         new Promise((reject,resolved)=>{
+//     //             let success = false;
+//     //             if(success){
+//     //                 resolved("Ticket Booked Sucessfully")
+//     //             }
+//     //             else{
+//     //                 reject("Unable to Book the Ticket")
+//     //             }
+//     //         }).then((result)=>{
+//     //             console.log(result);
                 
-            }).catch((error)=>{
-                console.log(error);
-            })
-        ) 
-    }
+//     //         }).catch((error)=>{
+//     //             console.log(error);
+//     //         })
+//     //     ) 
+//     // }
 
-    console.log(promises());
+//     // console.log(promises());
     
-    const connectapi = new Promise((resolved,reject)=>{
-        fetch('https://jsonplaceholder.typicode.com/posts/').then((res)=>{
-            if(!res.ok){
-                console.log("Unable to connect API");
+//     // const connectapi = new Promise((resolved,reject)=>{
+//     //     fetch('https://jsonplaceholder.typicode.com/posts/').then((res)=>{
+//     //         if(!res.ok){
+//     //             console.log("Unable to connect API");
                 
-            }else{
-                return  res.json()
-            }
-        })
-    .then((data)=>{
-        resolved(data)
-    }).catch((err)=>{
-        reject(err)
-    })})
-        connectapi.then((result)=>{
-            console.log(result);
+//     //         }else{
+//     //             return  res.json()
+//     //         }
+//     //     })
+//     // .then((data)=>{
+//     //     resolved(data)
+//     // }).catch((err)=>{
+//     //     reject(err)
+//     // })})
+//     //     connectapi.then((result)=>{
+//     //         console.log(result);
             
-        }).catch((err)=>{
-            console.log(err);
+//     //     }).catch((err)=>{
+//     //         console.log(err);
             
-        })
+//     //     })
     
 
 
     
 
-    //fetch
-    //async && await
-    const newConnect = async()=>{
-       try{
-        const response =  await fetch('https://jsonplaceholder.typicode.com/po/')
-       if(!response.ok){
-         throw Error ("Unable to connect");
-       }
-       const data = await response.json()
-       console.log(data);
-       }catch(err){
-        console.log(err);
+//     //fetch
+//         // async && await
+//     // const newConnect = async()=>{
+//     //    try{
+//     //     const response =  await fetch('https://jsonplaceholder.typicode.com/posts/')
+//     //    if(!response.ok){
+//     //      throw Error ("Unable to connect");
+//     //    }
+//     //    const data = await response.json()
+//     //    console.log(data);
+//     //    }catch(err){
+//     //     console.log(err);
         
-       }
+//     //    }
        
-        }
-        newConnect()
+//     //     }
+//     //     newConnect()
 
-    //error handling
+//     //error handling
 
+
+
+// //Promise
+//     // const transfer = new Promise((resolved,rejected)=>{
+//     //     let success = false;
+//     //     if(success){
+//     //         resolved("Amount Transfered")
+//     //     }
+//     //     else{
+//     //         rejected("I don't have a amount")
+//     //     }
+//     // })
+//     // transfer.then((result)=>{
+//     //     console.log(result);
+        
+//     // }).catch((err)=>{
+//     //     console.log(err);
+        
+//     // })
+
+
+// // //return
+// //     const reten = ()=>{
+// //         let a= 10;
+// //         let b= 50;
+// //         c=a+b;
+// //         return c
+// //     }
+
+// //     console.log(reten());
+    
+// //     const transfer = ()=>{
+// //         return new Promise((resolved,rejected)=>{
+// //             let success = false;
+// //             if(success){
+// //                 resolved("Amount Transfered")
+// //             }
+// //             else{
+// //                 rejected("I don't have a amount")
+// //             }
+// //         })
+// //     }
+// //     transfer().then((result)=>{
+// //         console.log(result);
+        
+// //     }).catch((err)=>{
+// //         console.log(err);
+        
+// //     })
+
+
+
+// //     const employee1 = new Promise ((resolved,reject)=>{
+// //         let reached = false;
+// //         if(reached){
+// //             resolved("employee 1 Loggedin Succesfully")
+// //         }else{
+// //             reject(" employee 1 Not yet Loggedin ")
+// //         }
+// //     })
+// //     const employee2 = new Promise ((resolved,reject)=>{
+// //         let reached = true;
+// //         if(reached){
+// //             resolved("employee 2 Loggedin Succesfully")
+// //         }else{
+// //             reject(" employee 2 Not yet Loggedin ")
+// //         }
+// //     })
+// //     const employee3 = new Promise ((resolved,reject)=>{
+// //         let reached = true;
+// //         if(reached){
+// //             resolved("employee 3 Loggedin Succesfully")
+// //         }else{
+// //             reject(" employee 3 Not yet Loggedin ")
+// //         }
+// //     })
+// //     const employee4 = new Promise ((resolved,reject)=>{
+// //         let reached = true;
+// //         if(reached){
+// //             setTimeout(()=>{
+// //                 resolved("employee 4 Loggedin Succesfully")
+            
+// //             },5000)
+            
+// //         }else{
+// //             reject(" employee 4 Not yet Loggedin ")
+// //         }
+// //     })
+
+// //     Promise.allSettled([employee1,employee2,employee3,employee4]).then((res)=>{
+// //         console.log(res);
+        
+// //     }).catch((err)=>{
+// //         console.log(err);
+        
+// //     })
+
+
+
+// //DOM  (Document Object Module)
+
+// let button = document.createElement('button')
+// button.textContent = "Sumbit"
+// button.setAttribute('class',"btn")
+// button.style.backgroundColor = "red"
+// button.style.color = "white"
+// document.body.append(button)
+
+// let arr = ["name",'age',"city"]
+// let newDiv = document.createElement("div");
+// let ul = document.createElement('ul')
+// ul.setAttribute("id","list_item");
+// arr.map((item)=>{
+//     let li = document.createElement('li')
+//     li.textContent = item
+//     ul.append(li)
+// })
+
+// newDiv.append(ul)
+// document.body.append(newDiv)
+
+
+// let btn = document.querySelector('#btn')
+// btn.innerHTML = "Btn Clicked"
+
+
+
+
+let arr = ["name",'age',"city"]
+
+
+
+// slice
+console.log(arr.slice(1,2));
+
+//split
+let name  = "User name"
+let splits  = name.split(" ")
+console.log(name.split(" "));
+console.log(splits[1]);
+
+
+let table = document.createElement('table')
+let thead = document.createElement('thead')
+arr.map((item)=>{
+    let th = document.createElement('th')
+    th.innerText = item
+    thead.appendChild(th)
+})
+
+let tbody = document.createElement('tbody')
+table.appendChild(thead)
+table.appendChild(tbody)
+document.body.append(table)
