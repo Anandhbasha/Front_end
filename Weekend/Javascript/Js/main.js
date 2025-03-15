@@ -62,16 +62,16 @@
 
 //operators
     //arithmetic Operator
-        //+,/,*,-,%,++,--,=
-    let a = 10;
-    let b = 5; 
-    console.log(a+b);
-    console.log(a-b);
-    console.log(a*b);
-    console.log(a/b);
-    console.log(a%b);
-    console.log(a++);
-    console.log(a);
+    //     //+,/,*,-,%,++,--,=
+    // let a = 10;
+    // let b = 5; 
+    // console.log(a+b);
+    // console.log(a-b);
+    // console.log(a*b);
+    // console.log(a/b);
+    // console.log(a%b);
+    // console.log(a++);
+    // console.log(a);
 //comparision opeartors
     // >,<,>=,<=
 //logical operators
@@ -109,31 +109,152 @@
 // console.log(age>=18?"Adult":"teenager");
 
 //array
-    let arr = [10,true,"cbabh",40,50]
-    console.log(arr);
-    console.log(arr[0]);
-    console.log(arr[1]);
-    console.log(arr[2]);
-    console.log(arr[3]);
-    console.log(arr[4]);
+    // let arr = [10,true,"cbabh",40,50]
+    // console.log(arr);
+    // console.log(arr[0]);
+    // console.log(arr[1]);
+    // console.log(arr[2]);
+    // console.log(arr[3]);
+    // console.log(arr[4]);
     
 //object
     //key value pair
 
-    const person = {
-        username:"xyz",
-        age:25,
-        isAlive:true
-    }
-    console.log(person);
-    console.log(person.username);
-    console.log(person.age);
-    console.log(person.isAlive);
+    // const person = {
+    //     username:"xyz",
+    //     age:25,
+    //     isAlive:true
+    // }
+    // console.log(person);
+    // console.log(person.username);
+    // console.log(person.age);
+    // console.log(person.isAlive);
 //function
-    function add(num1,num2,num3,num4,num5){
-        alert(num1+num2+num3+num4+num5);
-        // console.log(num1-num2-num3-num4-num5);                
-    }
+    // function add(num1,num2,num3,num4,num5){
+    //     alert(num1+num2+num3+num4+num5);
+    //     // console.log(num1-num2-num3-num4-num5);                
+    // }
 
     // add(10,20,50,80,70)
+
+    //types of functions
+    // //basic
+    // function fmname(){console.log("Basic Function")}
+    // fmname()
+    // //arrow function
+    // const arrow = ()=>console.log("Arrow Function")
+    // arrow();
+    // //IFFI
+    // const IFFI = (function(){
+
+    // })
+    // IFFI
+    // //ananoums
+    // // const ana = ((){
+
+    // // })
+    // // ana()
+
+//If
+//if Else
+//Else IF
+// if(10>15){
+//     console.log("if is working");    
+// }
+// else{
+//     console.log("else is working");
     
+// }
+// let age = 9;
+// if(age>18){
+//     console.log("Adult");    
+// }
+// else if(age<=10){
+//     console.log("Child");
+    
+// }
+// else{
+//     console.log("Teenage");
+    
+// }
+
+//Switch
+// let today = "Saturday";
+
+// switch(today){
+//     case "Monday":
+//     console.log("Today is Monday");
+//     break;
+//     case "Tuesday":
+//     console.log("Today is Tuesday");
+//     break;
+//     case "Wednesday":
+//     console.log("Today is Wednesday");
+//     break;
+//     case "Thursday":
+//     console.log("Today is Thursday");
+//     break;
+//     case "Friday":
+//     console.log("Today is Friday");
+//     break;
+//     case "Saturday":
+//     console.log("Today is Saturday");
+//     break;
+//     default:
+//         console.log("Today is Sunday");
+
+// }
+
+//loops
+// while
+// a = 0;
+
+
+
+
+// while(a<arr.length){    
+//     console.log(arr[a]);
+//     ++a;
+// }
+
+//do while
+// do{
+//     console.log("Do while is working");
+// }while(10<9)
+
+
+//for loop
+// for(let b=arr.length-1;b>=0;b--){//5
+//     console.log(arr[b]);    
+// }
+//for loop types
+//for of
+// for(let c of arr){
+//     console.log(c);    
+// }
+// //for in 
+// for(let c in arr){
+//     console.log(arr[c]);    
+// }
+//for each
+// arr.forEach((item)=>console.log(item))
+
+//akalya
+//a
+//ak
+//aka
+//akal
+//akaly
+//akalya
+let arr  = [10,50,60,70,82,755]
+//MRF
+//Map
+arr.map((item)=>console.log(item))
+//reduce
+let total = arr.reduce((sum,acc)=>sum+acc)
+console.log(total);
+
+//filter
+let fill = arr.filter((item)=>item%4===0)
+console.log(fill);
+
