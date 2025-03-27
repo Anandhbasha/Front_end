@@ -212,7 +212,7 @@
     // }while(a>b)
 
     // for
-    let arr = [50,70,60,80,90]
+   
     // for(let x=10;x<a;x++){
     //     console.log("a value is"+a);        
     // }
@@ -233,8 +233,76 @@
         
     // }
     //foreach
-    arr.forEach((x)=>console.log(x))
+    // arr.forEach((x)=>console.log(x))
+    let arr = [50,70,60,80,90]
+    //map
+    arr.map((x)=>console.log(x))
+    //MRF
+    //Reduce
+    let total = arr.reduce((acc,item)=>item+acc)
+    //acc=0;item=50 = 50
+    //acc=50;item=70 = 120
+    //acc=120:item=60 = 180
+    //acc = 180; item = 80 =260
+    //acc = 260; item=90 = 350
+    console.log(total);
+    
+    //Filter
+    let fill = arr.filter((item)=>item%3===0)
+    console.log(fill);
 
+    //array methods
+        //push
+        arr.push(150)
+        console.log(arr);
+        
+        //pop
+        arr.pop();
+        console.log(arr);  
+        //shift
+        arr.shift()
+        console.log(arr);
+        
+        //unshift
+        arr.unshift(75)
+        console.log(arr);
+        
+        //find
+        let finding = arr.find((x)=>x==72)
+        console.log(finding);
+        
+        //indexof
+        console.log(arr.indexOf(70));
+        
+        //length
+        console.log(arr.length);
+        
+        //toString
+        // console.log(arr.toString());
+        
+        //join
+        console.log(arr.join(""));
+        
+        //split
+        let names  = "Raja mani"
+        let newNames = names.split(" ")
+        console.log(newNames);
+        
+        //slice
+        console.log(arr.slice(1,2));
+        
+        //setTimeout
+        setTimeout(()=>{
+            console.log("Set Timeout");
+            
+        },5000)
+        //setInterval
+
+        setInterval(()=>{
+            console.log("Set Interval");
+            
+        },5000)
+    
 
 
 
