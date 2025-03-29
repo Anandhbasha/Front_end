@@ -304,18 +304,131 @@
 //     console.log(f);
 //     console.log("Rest Operator value is " +  r);
     
-    //destructure
-    const person = {
-        personName:"xyz",
-        age:30
-    }
-    // console.log(person.personName);
+    // //destructure
+    // const person = {
+    //     personName:"xyz",
+    //     age:30
+    // }
+    // // console.log(person.personName);
     
-    const{personName,age} = person
-    console.log(personName);
-    console.log(age);
+    // const{personName,age} = person
+    // console.log(personName);
+    // console.log(age);
     
     
 
     //template literals
     // console.log(`Rest Operator value is ${r}`);
+
+    //callback
+    const avg = (number)=>{
+        let average = number/2
+        return average
+    }
+    const add = (num1,num2)=>{
+        let total = num1+num2
+        console.log(avg(total));
+        
+    }
+   add(10,20);
+   
+//Async
+    //promise
+        // const trainTicket = new Promise ((resolved,reject)=>{
+        //     let success = false;
+        //     if(success){
+        //         resolved("Your Ticked Booked Succesfully")
+        //     }
+        //     else{
+        //         reject("Unable to book the ticket")
+        //     }
+        // })
+        // trainTicket.then((res)=>{
+        //     console.log(res);
+            
+        // // }).catch((err)=>{console.log(err);
+        // // })
+        // const trainTicket = ()=>{
+        //     return new Promise ((resolved,reject)=>{
+        //         let success = false;
+        //         if(success){
+        //             resolved("Your Ticked Booked Succesfully")
+        //         }
+        //         else{
+        //             reject("Unable to book the ticket")
+        //         }
+        //     }).then((res)=>{
+        //         console.log(res);                
+        //     }).catch((err)=>{console.log(err)})
+        // }
+        
+        // trainTicket()
+        // //Types of Promises
+        //     const friend1 = new Promise ((resolved,reject)=>{
+        //         let reaced = true
+        //         if(reaced){
+        //             resolved("Friend1 Reached Home")
+        //         }
+        //         else{
+        //             reject("Not yet reached")
+        //         }
+        //     })
+        //     const friend2 = new Promise ((resolved,reject)=>{
+        //         let reaced = false
+        //         if(reaced){
+        //             resolved("friend2 Reached Home")
+        //         }
+        //         else{
+        //             reject("friend Not yet reached")
+        //         }
+        //     })
+        //     const friend3 = new Promise ((resolved,reject)=>{
+        //         setTimeout(()=>{
+        //             let reaced = true
+        //         if(reaced){
+        //             resolved("friend3 Reached Home")
+        //         }
+        //         else{
+        //             reject("friend3 Not yet reached")
+        //         }
+        //         },5000)
+        //     })
+        //     //race
+        //     //any
+        //     //all
+        //     //allSetteled
+        //     Promise.allSettled([friend1,friend2,friend3]).then((res)=>{console.log(res)}).catch((err)=>{console.log(err)})
+
+        //     //setInterval
+        //     setInterval(()=>{
+        //         console.log("Set interval");
+                
+        //     },2000)
+        //fetch
+        // const fetchData = new Promise ((resolved,reject)=>{
+        //     fetch("https://jsonplaceholder.typicode.com/posts").then((res)=>{
+        //         if(!res.ok){
+        //             reject("Unable to connect")                    
+        //         }
+        //         else{
+        //             resolved(res.json())
+        //         }
+        //     })
+        // })
+        // fetchData.then((result)=>{console.log(result)}).catch((err)=>{console.log(err)})
+        //async function
+            const fetchData = async()=>{
+                try {
+                    const res = await fetch("https://jsonplaceholder.typicode.com/posts")
+                if(!res.ok){
+                    throw Error ("Unable to connect Api")
+                }
+                const data = await res.json();
+                console.log(data);
+                
+                } catch (error) {
+                    console.log(error);
+                    
+                }
+            }
+            fetchData();
