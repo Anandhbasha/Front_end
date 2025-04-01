@@ -405,43 +405,49 @@
     //    const dataFetch = new Promise((resolved,reject)=>{
     //     fetch("https://jsonplaceholder.typicode.com/posts").then((response)=>{
     //         if(!response.ok){
-    //             console.log("Api is Not Connected");                
-    //         }
-    //         const data = response.json()
-    //         resolved(data)
-    //         reject("Not Working")
-    //     })
-    //    })
-    //    dataFetch.then((success)=>{
-    //     console.log(success);        
-    //    }).catch((err)=>{
-    //     console.log(err);        
-    //    })
-    //async function
-    const fetchData = async()=>{
-        try{
-            const res = await fetch("https://jsonplaceholder.typicode.com/posts/1",{
-                method:"DELETE",//POST,PUT,PATCH
-                headers:{
-                    "content-type":"application/json"
-                },
-                body: JSON.stringify({
-                    userName: "xyz",
-                    userId: 4546
-                  })
-            })
-        if(!res.ok){
-            throw Error("Unable to Connect Database")
-        }
-        const datas = await res.json();
-        console.log(datas);
-        }
-        catch(err){
-            console.log(err);
+    // //             console.log("Api is Not Connected");                
+    // //         }
+    // //         const data = response.json()
+    // //         resolved(data)
+    // //         reject("Not Working")
+    // //     })
+    // //    })
+    // //    dataFetch.then((success)=>{
+    // //     console.log(success);        
+    // //    }).catch((err)=>{
+    // //     console.log(err);        
+    // //    })
+    // //async function
+    // const fetchData = async()=>{
+    //     try{
+    //         const res = await fetch("https://jsonplaceholder.typicode.com/posts/1",{
+    //             method:"DELETE",//POST,PUT,PATCH
+    //             headers:{
+    //                 "content-type":"application/json"
+    //             },
+    //             body: JSON.stringify({
+    //                 userName: "xyz",
+    //                 userId: 4546
+    //               })
+    //         })
+    //     if(!res.ok){
+    //         throw Error("Unable to Connect Database")
+    //     }
+    //     const datas = await res.json();
+    //     console.log(datas);
+    //     }
+    //     catch(err){
+    //         console.log(err);
             
-        }
+    //     }
         
-    }
-    fetchData()
+    // }
+    // fetchData()
     //fetch
     //error handling
+
+
+    let names = "anandh"
+    // names=100
+    console.log(names[0]);
+    
