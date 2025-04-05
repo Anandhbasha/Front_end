@@ -171,12 +171,85 @@
         //     newValue++;
         // }
     //do while
-        do{
-            console.log(arr[newValue]);
-            
-        }while(newValue>arr.length)
+        // do{
+        //     console.log(arr[newValue]);
+        //     newValue++;
+        // }while(newValue>arr.length)
     //for
+        // for(let x=0;x<arr.length;x++){
+        //     console.log(arr[x]);
+        //     // x=0,x=1,x=2,x=3
+            
+        // }
     //for of
-    //for in
-    //foreach
 
+    //     for(let i of arr){
+    //         //arr[0] = i;
+    //         //arr[1]=i
+    //         console.log(i);            
+    //     }
+    // //for in
+    // for(let i in arr){
+    //     console.log(arr[i]);         
+    // }
+    //foreach
+        // arr.forEach((i,index)=>console.log(i,index))
+    //map
+    arr.map((i,index)=>console.log(i,index))
+    let marks = [60,80,90,70,55]
+    //    task 1 //use only for loop
+    //    task 2 //for
+            //a
+            //an
+            //ana
+            //anan
+            //anand
+            //anandh
+        // task 3 //anandh
+        //anand
+        //anan
+        //ana
+        //an
+        //a
+    //reduce
+       let total =  marks.reduce((acc,sum)=>acc+sum)
+       //acc = 0
+       //sum = 60 60+0 = 60
+       //acc=60
+       //sum = 80  = 140
+       //acc = 140
+       //sum = 90 = 230
+       //acc = 230
+       //sum = 70 = 300
+       //acc = 300
+       //sum = 55 = 355
+       console.log(total);
+       
+
+    //filter
+        let fill = marks.filter((item)=>item>55)
+        console.log(fill);
+        
+//json
+//task number 4
+    const persons = [
+        {
+            personName:"venkat",
+            location:"Coimbatore",
+            age:24,
+            marks :[60,80,90,88,54]
+        },
+        {
+            personName:"sheera",
+            location:"Coimbatore",
+            age:30,
+            marks :[80,62,87,84,51]
+        },
+        {
+            personName:"sundaravarthini",
+            location:"Coimbatore",
+            age:31,
+            marks :[90,56,68,79,77]
+        },
+    ]
+    persons.map((person)=>console.log(person))
