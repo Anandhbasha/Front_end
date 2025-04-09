@@ -114,142 +114,205 @@
 //         let g = null
 //         console.log(typeof(g));
         
-//         //Nan
-//     //non premitive
-//         //array
-//             let arr = [10,"xyz",true,undefined]//10-0,"xyz-1",true-2,undefined-3
-//             console.log(arr[2]);
-//             arr[3] = 50
-//             console.log(arr);
+// //         //Nan
+// //     //non premitive
+// //         //array
+// //             let arr = [10,"xyz",true,undefined]//10-0,"xyz-1",true-2,undefined-3
+// //             console.log(arr[2]);
+// //             arr[3] = 50
+// //             console.log(arr);
             
-//         //object
-//         //     let person = {
-//         //         names:"abc",
-//         //         age:30,
-//         //         isAlive:true,
-//         //         add:"Coimbatore"
-//         //     }
-//         //     person.add = "salem"
-//         //     person.work = "Working"
-//         //     console.log(person.age);
-//         //     console.log(person.add);
-//         //     console.log(person);
+// //         //object
+// //         //     let person = {
+// //         //         names:"abc",
+// //         //         age:30,
+// //         //         isAlive:true,
+// //         //         add:"Coimbatore"
+// //         //     }
+// //         //     person.add = "salem"
+// //         //     person.work = "Working"
+// //         //     console.log(person.age);
+// //         //     console.log(person.add);
+// //         //     console.log(person);
             
             
-//         // //function
-//         // function add(a,b){
-//         //     console.log(a+b);
-//         // }
-//         // add(10,230);
+// //         // //function
+// //         // function add(a,b){
+// //         //     console.log(a+b);
+// //         // }
+// //         // add(10,230);
         
-//         // //arrow
-//         // const add = (a,b)=>console.log(a+b)
-//         // add(10,230);
-//         // //   const arrow = ()=>console.log("Arrow is working")
-//         // //     arrow()
-//         // //anonumus
-//         // const add = function(a,b){console.log(a+b)}
-//         // add()
-//         // //IFFI
-//         // const add = (function(a,b){console.log(a+b)})
-//         // add()
-// //loops
-//     //while
-//             //arr
+// //         // //arrow
+// //         // const add = (a,b)=>console.log(a+b)
+// //         // add(10,230);
+// //         // //   const arrow = ()=>console.log("Arrow is working")
+// //         // //     arrow()
+// //         // //anonumus
+// //         // const add = function(a,b){console.log(a+b)}
+// //         // add()
+// //         // //IFFI
+// //         // const add = (function(a,b){console.log(a+b)})
+// //         // add()
+// // //loops
+// //     //while
+// //             //arr
 
             
-//         // let value = 10;
-//         // while(value<15){
-//         //     ++value;//11//12//13//14//15
-//         //     console.log("While is working");
+// //         // let value = 10;
+// //         // while(value<15){
+// //         //     ++value;//11//12//13//14//15
+// //         //     console.log("While is working");
+            
+// //         // }
+//     let arr = [10,"xyz",true,undefined]
+//         let newValue = 0
+//         // while(newValue<arr.length){
+//         //     console.log(arr[newValue]);
+//         //     newValue++;
+//         // }
+//     //do while
+//         // do{
+//         //     console.log(arr[newValue]);
+//         //     newValue++;
+//         // }while(newValue>arr.length)
+//     //for
+//         // for(let x=0;x<arr.length;x++){
+//         //     console.log(arr[x]);
+//         //     // x=0,x=1,x=2,x=3
             
 //         // }
-    let arr = [10,"xyz",true,undefined]
-        let newValue = 0
-        // while(newValue<arr.length){
-        //     console.log(arr[newValue]);
-        //     newValue++;
-        // }
-    //do while
-        // do{
-        //     console.log(arr[newValue]);
-        //     newValue++;
-        // }while(newValue>arr.length)
-    //for
-        // for(let x=0;x<arr.length;x++){
-        //     console.log(arr[x]);
-        //     // x=0,x=1,x=2,x=3
-            
-        // }
-    //for of
+//     //for of
 
-    //     for(let i of arr){
-    //         //arr[0] = i;
-    //         //arr[1]=i
-    //         console.log(i);            
-    //     }
-    // //for in
-    // for(let i in arr){
-    //     console.log(arr[i]);         
-    // }
-    //foreach
-        // arr.forEach((i,index)=>console.log(i,index))
-    //map
-    arr.map((i,index)=>console.log(i,index))
-    let marks = [60,80,90,70,55]
-    //    task 1 //use only for loop
-    //    task 2 //for
-            //a
-            //an
-            //ana
-            //anan
-            //anand
-            //anandh
-        // task 3 //anandh
-        //anand
-        //anan
-        //ana
-        //an
-        //a
-    //reduce
-       let total =  marks.reduce((acc,sum)=>acc+sum)
-       //acc = 0
-       //sum = 60 60+0 = 60
-       //acc=60
-       //sum = 80  = 140
-       //acc = 140
-       //sum = 90 = 230
-       //acc = 230
-       //sum = 70 = 300
-       //acc = 300
-       //sum = 55 = 355
-       console.log(total);
+//     //     for(let i of arr){
+//     //         //arr[0] = i;
+//     //         //arr[1]=i
+//     //         console.log(i);            
+//     //     }
+//     // //for in
+//     // for(let i in arr){
+//     //     console.log(arr[i]);         
+//     // }
+//     //foreach
+//         // arr.forEach((i,index)=>console.log(i,index))
+//     //map
+//     arr.map((i,index)=>console.log(i,index))
+//     let marks = [60,80,90,70,55]
+//     //    task 1 //use only for loop
+//     //    task 2 //for
+//             //a
+//             //an
+//             //ana
+//             //anan
+//             //anand
+//             //anandh
+//         // task 3 //anandh
+//         //anand
+//         //anan
+//         //ana
+//         //an
+//         //a
+//     //reduce
+//        let total =  marks.reduce((acc,sum)=>acc+sum)
+//        //acc = 0
+//        //sum = 60 60+0 = 60
+//        //acc=60
+//        //sum = 80  = 140
+//        //acc = 140
+//        //sum = 90 = 230
+//        //acc = 230
+//        //sum = 70 = 300
+//        //acc = 300
+//        //sum = 55 = 355
+//     //    console.log(total);
        
 
-    //filter
-        let fill = marks.filter((item)=>item>55)
-        console.log(fill);
+//     // //filter
+//     //     let fill = marks.filter((item)=>item>55)
+//     //     console.log(fill);
         
-//json
-//task number 4
-    const persons = [
-        {
-            personName:"venkat",
-            location:"Coimbatore",
-            age:24,
-            marks :[60,80,90,88,54]
-        },
-        {
-            personName:"sheera",
-            location:"Coimbatore",
-            age:30,
-            marks :[80,62,87,84,51]
-        },
-        {
-            personName:"sundaravarthini",
-            location:"Coimbatore",
-            age:31,
-            marks :[90,56,68,79,77]
-        },
-    ]
-    persons.map((person)=>console.log(person))
+// //json
+// //task number 4
+//     // const persons = [
+//     //     {
+//     //         personName:"venkat",
+//     //         location:"Coimbatore",
+//     //         age:24,
+//     //         marks :[60,80,90,88,54]
+//     //     },
+//     //     {
+//     //         personName:"sheera",
+//     //         location:"Coimbatore",
+//     //         age:30,
+//     //         marks :[80,62,87,84,51]
+//     //     },
+//     //     {
+//     //         personName:"sundaravarthini",
+//     //         location:"Coimbatore",
+//     //         age:31,
+//     //         marks :[90,56,68,79,77]
+//     //     },
+//     // ]
+//     // persons.map((person)=>console.log(person))
+
+//Array methods
+let array = [100,200,300,400,500]
+    //push
+    array.push(415)
+    console.log(array);
+    
+    //pop
+        array.pop()
+        console.log(array);
+    //shift
+        array.shift()
+        console.log(array);
+    //unshift
+        array.unshift(222)
+        console.log(array);
+        
+    //find
+        let findingValue = array.find((x)=>x==224) 
+        console.log(findingValue);
+        
+    //slice
+        let topers = array.slice(1,3)
+        //array[0]
+        //array[1]
+        console.log(topers);
+        
+    //split
+        let names = "ManojKumar"
+        console.log(names[0]);
+        
+        console.log(names.split("j"));
+        
+    //some
+        // let newArr = [2,5,3,9]
+        // let evenNumber = newArr.some(x=>x%2==0)
+        // console.log(evenNumber);
+        
+    //every
+        let newArr = [2,4,7,8]
+        let allEvenNumber = newArr.every(x=>x%2==0)
+        console.log(allEvenNumber);
+    //indexOf
+        console.log(newArr.indexOf(2));        
+    //includes
+        console.log(newArr.includes(2));
+        
+    //splice
+        newArr.splice(0,2)
+        console.log(newArr);
+        newArr.splice(1,0,12,20)
+        console.log(newArr);
+        newArr[0] = 7
+        // newArr[1] = 12
+        newArr[2] = 20
+        newArr[3] = 8
+        newArr.splice(1,1,42,28)
+        console.log(newArr);
+        
+        
+
+
+    
