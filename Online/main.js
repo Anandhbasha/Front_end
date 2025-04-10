@@ -254,65 +254,115 @@
 //     // ]
 //     // persons.map((person)=>console.log(person))
 
-//Array methods
-let array = [100,200,300,400,500]
-    //push
-    array.push(415)
-    console.log(array);
+// //Array methods
+// let array = [100,200,300,400,500]
+//     //push
+//     array.push(415)
+//     console.log(array);
     
-    //pop
-        array.pop()
-        console.log(array);
-    //shift
-        array.shift()
-        console.log(array);
-    //unshift
-        array.unshift(222)
-        console.log(array);
+//     //pop
+//         array.pop()
+//         console.log(array);
+//     //shift
+//         array.shift()
+//         console.log(array);
+//     //unshift
+//         array.unshift(222)
+//         console.log(array);
         
-    //find
-        let findingValue = array.find((x)=>x==224) 
-        console.log(findingValue);
+//     //find
+//         let findingValue = array.find((x)=>x==224) 
+//         console.log(findingValue);
         
-    //slice
-        let topers = array.slice(1,3)
-        //array[0]
-        //array[1]
-        console.log(topers);
+//     //slice
+//         let topers = array.slice(1,3)
+//         //array[0]
+//         //array[1]
+//         console.log(topers);
         
-    //split
-        let names = "ManojKumar"
-        console.log(names[0]);
+//     //split
+//         let names = "ManojKumar"
+//         console.log(names[0]);
         
-        console.log(names.split("j"));
+//         console.log(names.split("j"));
         
-    //some
-        // let newArr = [2,5,3,9]
-        // let evenNumber = newArr.some(x=>x%2==0)
-        // console.log(evenNumber);
+//     //some
+//         // let newArr = [2,5,3,9]
+//         // let evenNumber = newArr.some(x=>x%2==0)
+//         // console.log(evenNumber);
         
-    //every
-        let newArr = [2,4,7,8]
-        let allEvenNumber = newArr.every(x=>x%2==0)
-        console.log(allEvenNumber);
-    //indexOf
-        console.log(newArr.indexOf(2));        
-    //includes
-        console.log(newArr.includes(2));
+//     //every
+//         let newArr = [2,4,7,8]
+//         let allEvenNumber = newArr.every(x=>x%2==0)
+//         console.log(allEvenNumber);
+//     //indexOf
+//         console.log(newArr.indexOf(2));        
+//     //includes
+//         console.log(newArr.includes(2));
         
-    //splice
-        newArr.splice(0,2)
-        console.log(newArr);
-        newArr.splice(1,0,12,20)
-        console.log(newArr);
-        newArr[0] = 7
-        // newArr[1] = 12
-        newArr[2] = 20
-        newArr[3] = 8
-        newArr.splice(1,1,42,28)
-        console.log(newArr);
+//     //splice
+//         newArr.splice(0,2)
+//         console.log(newArr);
+//         newArr.splice(1,0,12,20)
+//         console.log(newArr);
+//         newArr[0] = 7
+//         // newArr[1] = 12
+//         newArr[2] = 20
+//         newArr[3] = 8
+//         newArr.splice(1,1,42,28)
+//         console.log(newArr);
         
-        
-
-
+//spread
+    let arr1 = [50,80,56,54,54]
+    let arr2 = [45,66,88,77,99]
+    let allarr = [arr1,arr2]
+    console.log(allarr);
     
+    let newArr = [...arr1,...arr2]
+    console.log(newArr);
+    
+//rest   
+    let [first,second,...rest] = newArr
+    console.log(first,second);
+    console.log(rest);   
+    
+//destrucure
+    const persons = {
+        userName:"xdr",
+        age:30
+    }
+    // console.log(persons);
+    // console.log(persons.userName);
+    const {userName,age} = persons
+    console.log(userName); 
+    
+//template literals
+    console.log("This is Object value"+ userName, age);
+    console.log(`This is Object value ${userName} ${age}`);
+    
+//setTimeout
+    setTimeout(()=>{
+        console.log("SetTimeout is Working");
+    },5000)
+    
+//setInterval
+setInterval(()=>{
+    console.log("setInterval is Working");
+},5000)
+//callback
+    const percentage = (avg)=>{
+        let percent = (avg*5/100)
+        return percent
+        
+    }
+    const add = (sub1,sub2,sub3,sub4,sub5)=>{
+        let totalMarks = sub1+sub2+sub3+sub4+sub5
+        console.log(percentage(totalMarks));        
+        return totalMarks
+    }
+    console.log(add(50,70,90,80,75));
+    
+    // add(50,70,90,80,75)
+    // add(50,70,90,80,75)
+    // add(50,70,90,80,75)
+//return
