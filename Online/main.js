@@ -306,63 +306,170 @@
 //         newArr.splice(1,0,12,20)
 //         console.log(newArr);
 //         newArr[0] = 7
-//         // newArr[1] = 12
-//         newArr[2] = 20
-//         newArr[3] = 8
-//         newArr.splice(1,1,42,28)
-//         console.log(newArr);
+// //         // newArr[1] = 12
+// //         newArr[2] = 20
+// //         newArr[3] = 8
+// //         newArr.splice(1,1,42,28)
+// //         console.log(newArr);
         
-//spread
-    let arr1 = [50,80,56,54,54]
-    let arr2 = [45,66,88,77,99]
-    let allarr = [arr1,arr2]
-    console.log(allarr);
+// //spread
+//     let arr1 = [50,80,56,54,54]
+//     let arr2 = [45,66,88,77,99]
+//     let allarr = [arr1,arr2]
+//     console.log(allarr);
     
-    let newArr = [...arr1,...arr2]
-    console.log(newArr);
+//     let newArr = [...arr1,...arr2]
+//     console.log(newArr);
     
-//rest   
-    let [first,second,...rest] = newArr
-    console.log(first,second);
-    console.log(rest);   
+// //rest   
+//     let [first,second,...rest] = newArr
+//     console.log(first,second);
+//     console.log(rest);   
     
-//destrucure
-    const persons = {
-        userName:"xdr",
-        age:30
-    }
-    // console.log(persons);
-    // console.log(persons.userName);
-    const {userName,age} = persons
-    console.log(userName); 
+// //destrucure
+//     const persons = {
+//         userName:"xdr",
+//         age:30
+//     }
+//     // console.log(persons);
+//     // console.log(persons.userName);
+//     const {userName,age} = persons
+//     console.log(userName); 
     
-//template literals
-    console.log("This is Object value"+ userName, age);
-    console.log(`This is Object value ${userName} ${age}`);
+// //template literals
+//     console.log("This is Object value"+ userName, age);
+//     console.log(`This is Object value ${userName} ${age}`);
     
-//setTimeout
-    setTimeout(()=>{
-        console.log("SetTimeout is Working");
-    },5000)
+// //setTimeout
+//     setTimeout(()=>{
+//         console.log("SetTimeout is Working");
+//     },5000)
     
-//setInterval
-setInterval(()=>{
-    console.log("setInterval is Working");
-},5000)
-//callback
-    const percentage = (avg)=>{
-        let percent = (avg*5/100)
-        return percent
+// //setInterval
+// setInterval(()=>{
+//     console.log("setInterval is Working");
+// },5000)
+// //callback
+//     const percentage = (avg)=>{
+//         let percent = (avg*5/100)
+//         return percent
         
-    }
-    const add = (sub1,sub2,sub3,sub4,sub5)=>{
-        let totalMarks = sub1+sub2+sub3+sub4+sub5
-        console.log(percentage(totalMarks));        
-        return totalMarks
-    }
-    console.log(add(50,70,90,80,75));
+//     }
+//     const add = (sub1,sub2,sub3,sub4,sub5)=>{
+//         let totalMarks = sub1+sub2+sub3+sub4+sub5
+//         console.log(percentage(totalMarks));        
+//         return totalMarks
+//     }
+//     console.log(add(50,70,90,80,75));
     
-    // add(50,70,90,80,75)
-    // add(50,70,90,80,75)
-    // add(50,70,90,80,75)
-//return
+//     // add(50,70,90,80,75)
+//     // add(50,70,90,80,75)
+//     // add(50,70,90,80,75)
+// //return
+
+
+//Async 
+    //Promise
+        // const bookTicket = new Promise((resolved,reject)=>{
+        //     let success = false;
+        //     if(success){
+        //         resolved("Ticket Booked Successfully")
+        //     }
+        //     else{
+        //         reject("Unable to Book the Ticket")
+        //     }
+        // })
+        // bookTicket.then((result)=>{console.log(result)}).catch((error)=>console.log(error))
+
+
+    //  const booking = ()=>{
+    //     return  new Promise((resolved,reject)=>{
+    //         let success = false;
+    //         if(success){
+    //             resolved("Ticket Booked Successfully")
+    //         }
+    //         else{
+    //             reject("Unable to Book the Ticket")
+    //         }
+    //     }).then((result)=>{console.log(result)}).catch((error)=>console.log(error))
+    //  }
+
+    //  console.log(booking());
+     
+
+    //fetch
+    // // let datas = [];
+    //     const fetchApi = new Promise ((resolved,reject)=>{
+    //         fetch("https://jsonplaceholder.typicode.com/users").then((res)=>{
+    //             if(!res.ok){
+    //                 reject("Unable to connect the API")
+    //             }
+    //             else{
+                    
+    //                 resolved(res.json())
+    //             }
+    //         })
+    //     })
+    //     fetchApi.then((result)=>
+    //         {
+    //             // datas=result;
+    //             // console.log(datas);
+    //             console.log(result)}).
+    //             catch((err)=>console.log(err))
+        
+        
+    //Async Function
+                const newApi = async()=>{
+                    try{
+                        const res = await fetch("https://jsonplaceholder.typicode.com/users")
+                    if(!res.ok){
+                        throw Error("Unable to connect");
+                        
+                    }
+                    else{
+                        const data = await res.json()
+                        console.log(data);
+                        
+                    }
+                    }catch(err){
+                        console.log(err);
+                    }
+                }
+                newApi()
+
+    //race
+    //any
+    //all
+    //allSettled
+    const person1 = new Promise((resolved,reject)=>{
+        let coming = true;
+        if(coming){
+            resolved("person1 is Coming")
+        }
+        else{
+            reject("person1 is Not Coming")
+        }
+    })
+    const person2 = new Promise((resolved,reject)=>{
+        let coming = false;
+        setTimeout(()=>{
+            if(coming){
+                resolved("person2 is Coming")
+            }
+            else{
+                reject("person2 is Not Coming")
+            }
+        },5000)
+    })
+    const person3 = new Promise((resolved,reject)=>{
+        let coming = false;
+        if(coming){
+            resolved("person3 is Coming")
+        }
+        else{
+            reject("person3 is Not Coming")
+        }
+    })
+    Promise.allSettled([person1,person2,person3]).then((res)=>console.log(res)).catch((err)=>console.log(err))
+    //error handling
+
